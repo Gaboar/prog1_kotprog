@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane disable="true" dividerPositions="0.56" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <SplitPane disable="true" dividerPositions="0.5" layoutX="199.0" layoutY="18.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Slider layoutX="183.0" layoutY="23.0" majorTickUnit="3.0" max="10.0" min="1.0" minorTickCount="1" opacity="1" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" AnchorPane.rightAnchor="70.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Slider>
+                        <Slider layoutX="183.0" layoutY="73.0" majorTickUnit="3.0" max="10.0" min="1.0" minorTickCount="1" opacity="1" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" AnchorPane.rightAnchor="70.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Slider>
+                        <Slider layoutX="183.0" layoutY="123.0" majorTickUnit="3.0" max="10.0" min="1.0" minorTickCount="1" opacity="1" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" AnchorPane.rightAnchor="70.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Slider>
+                        <Slider layoutX="183.0" layoutY="173.0" majorTickUnit="3.0" max="10.0" min="1.0" minorTickCount="1" opacity="1" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" AnchorPane.rightAnchor="70.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Slider>
+                        <Slider layoutX="183.0" layoutY="223.0" majorTickUnit="3.0" max="10.0" min="1.0" minorTickCount="1" opacity="1" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" AnchorPane.rightAnchor="70.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Slider>
+                        <Slider layoutX="183.0" layoutY="273.0" majorTickUnit="3.0" max="10.0" min="1.0" minorTickCount="1" opacity="1" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" AnchorPane.rightAnchor="70.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Slider>
+                        <Label layoutX="47.0" layoutY="23.0" opacity="1" text="Támadás" AnchorPane.leftAnchor="50.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <Label layoutX="51.0" layoutY="73.0" opacity="1" text="Védekezés" AnchorPane.leftAnchor="50.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <Label layoutX="44.0" layoutY="123.0" opacity="1" text="Varázserő" AnchorPane.leftAnchor="50.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <Label layoutX="47.0" layoutY="173.0" opacity="1" text="Tudás" AnchorPane.leftAnchor="50.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <Label layoutX="47.0" layoutY="223.0" opacity="1" text="Morál" AnchorPane.leftAnchor="50.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                        <Label layoutX="44.0" layoutY="273.0" opacity="1" text="Szerencse" AnchorPane.leftAnchor="50.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Label>
+                     </children></AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+              </items>
+            </SplitPane>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Spinner layoutX="65.0" layoutY="147.0" opacity="1" prefWidth="70.0" AnchorPane.topAnchor="155.0" />
+            <Spinner layoutX="215.0" layoutY="147.0" opacity="1" prefWidth="70.0" AnchorPane.topAnchor="155.0" />
+            <Spinner layoutX="365.0" layoutY="147.0" opacity="1" prefWidth="70.0" AnchorPane.topAnchor="155.0" />
+            <Spinner layoutX="515.0" layoutY="147.0" opacity="1" prefWidth="70.0" AnchorPane.topAnchor="155.0" />
+            <Spinner layoutX="665.0" layoutY="147.0" opacity="1" prefWidth="70.0" AnchorPane.topAnchor="155.0" />
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="50.0" layoutY="29.0" opacity="1" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="50.0">
+               <image>
+                  <Image url="@foldmuves.png" />
+               </image></ImageView>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="200.0" layoutY="23.0" opacity="1" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="50.0">
+               <image>
+                  <Image url="@ijasz.png" />
+               </image></ImageView>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="350.0" layoutY="23.0" opacity="1" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="50.0">
+               <image>
+                  <Image url="@lovag.png" />
+               </image></ImageView>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="500.0" layoutY="30.0" opacity="1" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="50.0">
+               <image>
+                  <Image url="@magus.png" />
+               </image></ImageView>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="650.0" layoutY="23.0" opacity="1" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="50.0">
+               <image>
+                  <Image url="@griff.png" />
+               </image></ImageView>
+            <Label alignment="CENTER" layoutX="67.0" layoutY="23.0" opacity="1" text="Földműves" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="237.0" layoutY="23.0" opacity="1" text="Íjász" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="382.0" layoutY="23.0" opacity="1" text="Lovag" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="529.0" layoutY="23.0" opacity="1" text="Mágus" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="687.0" layoutY="23.0" opacity="1" text="Griff" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="368.0" layoutY="213.0" opacity="1" text="Arany: 1000">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
