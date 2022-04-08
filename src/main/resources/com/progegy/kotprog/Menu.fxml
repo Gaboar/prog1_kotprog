@@ -18,24 +18,36 @@
       <VBox.margin>
          <Insets />
       </VBox.margin></Label>
-   <Button alignment="CENTER" mnemonicParsing="false" onAction="#nehezsegValaszto" prefWidth="230.0" text="Button">
+   <Button alignment="CENTER" mnemonicParsing="false" onAction="#nehezsegValaszto" prefWidth="230.0" text="Egyjátékos mód">
       <cursor>
          <Cursor fx:constant="HAND" />
       </cursor>
+      <font>
+         <Font size="14.0" />
+      </font>
    </Button>
-   <Button alignment="CENTER" layoutX="292.0" layoutY="182.0" mnemonicParsing="false" prefWidth="230.0" text="Button">
+   <Button alignment="CENTER" layoutX="292.0" layoutY="182.0" mnemonicParsing="false" prefWidth="230.0" text="Többjátékos mód">
       <cursor>
          <Cursor fx:constant="HAND" />
       </cursor>
+      <font>
+         <Font size="14.0" />
+      </font>
    </Button>
-   <Button alignment="CENTER" layoutX="292.0" layoutY="241.0" mnemonicParsing="false" prefWidth="230.0" text="Button">
+   <Button alignment="CENTER" layoutX="292.0" layoutY="241.0" mnemonicParsing="false" prefWidth="230.0" text="Readme">
       <cursor>
          <Cursor fx:constant="HAND" />
       </cursor>
+      <font>
+         <Font size="14.0" />
+      </font>
    </Button>
-   <Button alignment="CENTER" layoutX="292.0" layoutY="264.0" mnemonicParsing="false" prefWidth="230.0" text="Button">
+   <Button alignment="CENTER" layoutX="292.0" layoutY="264.0" mnemonicParsing="false" prefWidth="230.0" text="Kilépés">
       <cursor>
          <Cursor fx:constant="HAND" />
       </cursor>
+      <font>
+         <Font size="14.0" />
+      </font>
    </Button>
 </VBox>

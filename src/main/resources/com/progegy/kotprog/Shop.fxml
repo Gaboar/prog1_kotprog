@@ -63,7 +63,39 @@
                               <Font size="14.0" />
                            </font></Label>
                      </children></AnchorPane>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Spinner layoutY="30.0" opacity="1" prefWidth="80.0" AnchorPane.rightAnchor="100.0" />
+                        <Spinner layoutY="90.0" opacity="1" prefWidth="80.0" AnchorPane.rightAnchor="100.0" />
+                        <Spinner layoutY="150.0" opacity="1" prefWidth="80.0" AnchorPane.rightAnchor="100.0" />
+                        <Spinner layoutY="210.0" opacity="1" prefWidth="80.0" AnchorPane.rightAnchor="100.0" />
+                        <Spinner layoutY="270.0" opacity="1" prefWidth="80.0" AnchorPane.rightAnchor="100.0" />
+                        <Label layoutX="47.0" layoutY="33.0" opacity="1" text="Villámcsapás" AnchorPane.leftAnchor="80.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="93.0" opacity="1" text="Tűzlabda" AnchorPane.leftAnchor="80.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="153.0" opacity="1" text="Pajzs" AnchorPane.leftAnchor="80.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="213.0" opacity="1" text="Erősítés" AnchorPane.leftAnchor="80.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="273.0" opacity="1" text="Feltámasztás" AnchorPane.leftAnchor="80.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
               </items>
             </SplitPane>
          </children></AnchorPane>
@@ -119,10 +151,15 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label layoutX="368.0" layoutY="213.0" opacity="1" text="Arany: 1000">
+            <Label layoutX="520.0" layoutY="213.0" opacity="1" text="Arany: 1000" AnchorPane.bottomAnchor="20.0">
                <font>
                   <Font size="14.0" />
                </font></Label>
+            <Label alignment="TOP_LEFT" layoutX="50.0" layoutY="210.0" opacity="1" prefHeight="60.0" prefWidth="470.0" text="Desc: Egy kiválasztott ellenséges egységre (varázserő * 30) sebzés okozása&#10;Ár: 60 arany&#10;Mana: 5" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
          </children></AnchorPane>
   </items>
 </SplitPane>
