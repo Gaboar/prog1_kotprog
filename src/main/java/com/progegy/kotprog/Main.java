@@ -16,6 +16,8 @@ public class Main extends javafx.application.Application {
         stage.show();
     }
 
+    public static GameController game;
+
     public static void main(String[] args) {
         launch();
     }

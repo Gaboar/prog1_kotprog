@@ -1,9 +1,10 @@
 package com.progegy.kotprog;
 
-import java.util.List;
-
 public class GameController {
     public Hos player1, player2;
-    public List<Egyseg> p1egysegek, p2egysegek;
 
+    public GameController(Hos player1, Hos player2) {
+        this.player1 = player1;
+        this.player2 = player2;
+    }
 }
