@@ -65,36 +65,56 @@
                      </children></AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Label layoutX="47.0" layoutY="33.0" onMouseEntered="#leirasMegj" onMouseExited="#leirasElrejt" text="Villámcsapás" AnchorPane.leftAnchor="80.0">
+                        <Label layoutX="47.0" layoutY="33.0" onMouseEntered="#leirasMegj" onMouseExited="#leirasElrejt" text="Villámcsapás" AnchorPane.leftAnchor="100.0">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="47.0" layoutY="93.0" onMouseEntered="#leirasMegj" onMouseExited="#leirasElrejt" text="Tűzlabda" AnchorPane.leftAnchor="80.0">
+                        <Label layoutX="47.0" layoutY="93.0" onMouseEntered="#leirasMegj" onMouseExited="#leirasElrejt" text="Tűzlabda" AnchorPane.leftAnchor="100.0">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="47.0" layoutY="153.0" onMouseEntered="#leirasMegj" onMouseExited="#leirasElrejt" text="Pajzs" AnchorPane.leftAnchor="80.0">
+                        <Label layoutX="47.0" layoutY="153.0" onMouseEntered="#leirasMegj" onMouseExited="#leirasElrejt" text="Pajzs" AnchorPane.leftAnchor="100.0">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="47.0" layoutY="213.0" onMouseEntered="#leirasMegj" onMouseExited="#leirasElrejt" text="Erősítés" AnchorPane.leftAnchor="80.0">
+                        <Label layoutX="47.0" layoutY="213.0" onMouseEntered="#leirasMegj" onMouseExited="#leirasElrejt" text="Erősítés" AnchorPane.leftAnchor="100.0">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="47.0" layoutY="273.0" onMouseEntered="#leirasMegj" onMouseExited="#leirasElrejt" text="Feltámasztás" AnchorPane.leftAnchor="80.0">
+                        <Label layoutX="47.0" layoutY="273.0" onMouseEntered="#leirasMegj" onMouseExited="#leirasElrejt" text="Feltámasztás" AnchorPane.leftAnchor="100.0">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="villamcsapas" layoutX="215.0" layoutY="30.0" onKeyReleased="#textBoxInputHandler" onMouseClicked="#textBoxSelect" prefWidth="70.0" text="0" AnchorPane.rightAnchor="100.0" />
-                        <TextField fx:id="tuzbabda" layoutX="215.0" layoutY="90.0" onKeyReleased="#textBoxInputHandler" onMouseClicked="#textBoxSelect" prefWidth="70.0" text="0" AnchorPane.rightAnchor="100.0" />
-                        <TextField fx:id="pajzs" layoutX="225.0" layoutY="150.0" onKeyReleased="#textBoxInputHandler" onMouseClicked="#textBoxSelect" prefWidth="70.0" text="0" AnchorPane.rightAnchor="100.0" />
-                        <TextField fx:id="erosites" layoutX="235.0" layoutY="210.0" onKeyReleased="#textBoxInputHandler" onMouseClicked="#textBoxSelect" prefWidth="70.0" text="0" AnchorPane.rightAnchor="100.0" />
-                        <TextField fx:id="feltamasztas" layoutX="245.0" layoutY="270.0" onKeyReleased="#textBoxInputHandler" onMouseClicked="#textBoxSelect" prefWidth="70.0" text="0" AnchorPane.rightAnchor="100.0" />
+                        <CheckBox fx:id="villamcsapas" layoutX="238.0" layoutY="30.0" mnemonicParsing="false" onAction="#checkBoxInputHandler" AnchorPane.rightAnchor="120.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="tuzlabda" layoutX="233.0" layoutY="90.0" mnemonicParsing="false" onAction="#checkBoxInputHandler" AnchorPane.rightAnchor="120.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="pajzs" layoutX="233.0" layoutY="150.0" mnemonicParsing="false" onAction="#checkBoxInputHandler" AnchorPane.rightAnchor="120.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="erosites" layoutX="233.0" layoutY="210.0" mnemonicParsing="false" onAction="#checkBoxInputHandler" AnchorPane.rightAnchor="120.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="feltamasztas" layoutX="233.0" layoutY="270.0" mnemonicParsing="false" onAction="#checkBoxInputHandler" AnchorPane.rightAnchor="120.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </CheckBox>
                      </children></AnchorPane>
               </items>
             </SplitPane>

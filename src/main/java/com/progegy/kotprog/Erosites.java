@@ -2,8 +2,8 @@ package com.progegy.kotprog;
 
 public class Erosites extends Varazslat {
 
-    public Erosites(int db) {
-        super(120, 8, db);
+    public Erosites(boolean van) {
+        super(120, 8, van);
     }
 
     @Override

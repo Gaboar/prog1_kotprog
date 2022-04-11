@@ -11,6 +11,6 @@ public class Lovag extends Egyseg {
 
     @Override
     public String toString() {
-        return "Ár: 10;  Sebzés: 9-14;  Életerő: 22;  Sebesség: 3;  Kezdeményezés: 14\nKépesség: az egység az első támadónak vissza tud támadni";
+        return "Ár: 10;  Sebzés: 9-14;  Életerő: 22;  Sebesség: 3;  Kezdeményezés: 14\nKépesség: az egység tetszőlegesen sok támadónak vissza tud támadni";
     }
 }

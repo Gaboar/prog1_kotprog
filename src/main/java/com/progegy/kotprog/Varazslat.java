@@ -3,14 +3,14 @@ package com.progegy.kotprog;
 public abstract class Varazslat {
 
     private final int ar, mana;
-    int db;
+    private final boolean van;
 
     public abstract void Varazs(Egyseg celpont);
 
-    public Varazslat(int ar, int mana, int db) {
+    public Varazslat(int ar, int mana, boolean van) {
         this.ar = ar;
         this.mana = mana;
-        this.db = db;
+        this.van = van;
     }
 
     public int getAr() {

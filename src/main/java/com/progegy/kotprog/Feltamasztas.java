@@ -2,8 +2,8 @@ package com.progegy.kotprog;
 
 public class Feltamasztas extends Varazslat {
 
-    public Feltamasztas(int db) {
-        super(120, 6, db);
+    public Feltamasztas(boolean van) {
+        super(120, 6, van);
     }
 
     @Override

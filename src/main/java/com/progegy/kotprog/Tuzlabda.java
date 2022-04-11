@@ -2,8 +2,8 @@ package com.progegy.kotprog;
 
 public class Tuzlabda extends Varazslat {
 
-    public Tuzlabda(int db) {
-        super(120, 9, db);
+    public Tuzlabda(boolean van) {
+        super(120, 9, van);
     }
 
     @Override

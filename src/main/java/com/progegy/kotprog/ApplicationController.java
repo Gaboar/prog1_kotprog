@@ -8,6 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.control.TextField;
@@ -157,15 +158,15 @@ public class ApplicationController implements Initializable {
 
     //region inputfields
     @FXML
-    TextField villamcsapas;
+    CheckBox villamcsapas;
     @FXML
-    TextField tuzbabda;
+    CheckBox tuzlabda;
     @FXML
-    TextField pajzs;
+    CheckBox pajzs;
     @FXML
-    TextField erosites;
+    CheckBox erosites;
     @FXML
-    TextField feltamasztas;
+    CheckBox feltamasztas;
     @FXML
     TextField foldmuves;
     @FXML
@@ -215,9 +216,14 @@ public class ApplicationController implements Initializable {
     }
 
     @FXML
+    protected void checkBoxInputHandler(ActionEvent event) {
+        penzvalto();
+    }
+
+    @FXML
     protected void sliderInputHandler(MouseEvent event) {
         if (penzvalto() < 0) {
-            ((Slider)event.getSource()).setValue(0);
+            ((Slider)event.getSource()).setValue(1);
             penzvalto();
         }
     }
@@ -225,10 +231,16 @@ public class ApplicationController implements Initializable {
     private int penzvalto() {
         int arany = Main.game.vasarol.getArany(), ar;
         System.out.println("--- Artabla: ---");
-        TextField[] textFields = {villamcsapas, tuzbabda, pajzs, erosites, feltamasztas, foldmuves, ijasz, lovag, magus, griff};
+        TextField[] textFields = {foldmuves, ijasz, lovag, magus, griff};
         for (TextField field: textFields) {
             ar = getPrice(field.getId()) * Integer.parseInt(field.getText());
             System.out.println("" + field.getId() + " = " + ar);
+            arany -= ar;
+        }
+        CheckBox[] checkBoxes = {villamcsapas, tuzlabda, pajzs, erosites, feltamasztas};
+        for (CheckBox check: checkBoxes) {
+            ar = getPrice(check.getId()) * (check.isSelected() ? 1 : 0);
+            System.out.println("" + check.getId() + " = " + ar);
             arany -= ar;
         }
         Slider[] sliders = {tamadas, vedekezes, varazsero, tudas, moral, szerencse};
@@ -284,21 +296,22 @@ public class ApplicationController implements Initializable {
     @FXML
     protected void egysegElrendezo(ActionEvent event) throws IOException {
         int o = 0;
-        TextField[] textFields = {villamcsapas, tuzbabda, pajzs, erosites, feltamasztas, foldmuves, ijasz, lovag, magus, griff};
-        for (int i = 5; i < 10; i++) o += Integer.parseInt(textFields[i].getText());
+        TextField[] textFields = {foldmuves, ijasz, lovag, magus, griff};
+        for (TextField field: textFields) o += Integer.parseInt(field.getText());
         if (o < 1) {
             leiras.setTextFill(Color.RED);
             leiras.setText("Egyedül nem mehetsz csatába!");
             return;
         }
+        CheckBox[] checkBoxes = {villamcsapas, tuzlabda, pajzs, erosites, feltamasztas};
         Slider[] sliders = {tamadas, vedekezes, varazsero, tudas, moral, szerencse};
         Main.game.vasarol.setArany(penzvalto());
         Main.game.vasarol.setTulajdonsagok((int)sliders[0].getValue(), (int)sliders[1].getValue(), (int)sliders[2].getValue(),
                 (int)sliders[3].getValue(), (int)sliders[4].getValue(), (int)sliders[5].getValue());
-        Main.game.vasarol.setVarazslatok(Integer.parseInt(textFields[0].getText()), Integer.parseInt(textFields[1].getText()),
+        Main.game.vasarol.setVarazslatok(checkBoxes[0].isSelected(), checkBoxes[1].isSelected(),
+                checkBoxes[2].isSelected(), checkBoxes[3].isSelected(), checkBoxes[4].isSelected());
+        Main.game.vasarol.setEgysegek(Integer.parseInt(textFields[0].getText()), Integer.parseInt(textFields[1].getText()),
                 Integer.parseInt(textFields[2].getText()), Integer.parseInt(textFields[3].getText()), Integer.parseInt(textFields[4].getText()));
-        Main.game.vasarol.setEgysegek(Integer.parseInt(textFields[5].getText()), Integer.parseInt(textFields[6].getText()),
-                Integer.parseInt(textFields[7].getText()), Integer.parseInt(textFields[8].getText()), Integer.parseInt(textFields[9].getText()));
         System.out.println("Egysegek elrendezese a tablan");
         fxmlLoader = new FXMLLoader(Main.class.getResource("Arrange.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -343,19 +356,11 @@ public class ApplicationController implements Initializable {
         }
         System.out.println("" + e + ". egyseg kivalasztva");
         if (e != -1) Main.game.letesz = Main.game.vasarol.getEgysegek()[e];
-        levesz();
-        hovaTehet();
-    }
-
-    private void levesz() {
         for (Node node: palya.getChildren()) {
             if (GridPane.getRowIndex(node) != null && ((ImageView)node).getImage() != null && ((ImageView)node).getImage().getUrl().contains(Main.game.letesz.getName())) {
                 ((ImageView)node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/ures.png"));
             }
         }
-    }
-
-    private void hovaTehet() {
         if (Main.game.vasarol == Main.game.player1) {
             for (Node node: palya.getChildren()) {
                 if (GridPane.getColumnIndex(node) != null && GridPane.getColumnIndex(node) < 2 && ((ImageView)node).getImage() == null) {
@@ -381,21 +386,19 @@ public class ApplicationController implements Initializable {
             col = GridPane.getColumnIndex((Node)event.getSource());
         }
         if (row == -1 || col == -1) return;
-        boolean nT = false;
+        boolean nemTehet = false;
         for (Node node: palya.getChildren()) {
             if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && GridPane.getRowIndex(node) == row &&
                     GridPane.getColumnIndex(node) == col && ((ImageView)node).getImage() != null && ((ImageView)node).getImage().getUrl().contains("ures")) {
                 ((ImageView)node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/" + Main.game.letesz.getName() + ".png"));
-                nT = true;
+                nemTehet = true;
             }
         }
-        if (nT) nemTehet();
-    }
-
-    private void nemTehet() {
-        for (Node node: palya.getChildren()) {
-            if (GridPane.getRowIndex(node) != null && ((ImageView)node).getImage() != null && ((ImageView)node).getImage().getUrl().contains("mezo")) {
-                ((ImageView)node).setImage(null);
+        if (nemTehet) {
+            for (Node node: palya.getChildren()) {
+                if (GridPane.getRowIndex(node) != null && ((ImageView)node).getImage() != null && ((ImageView)node).getImage().getUrl().contains("mezo")) {
+                    ((ImageView)node).setImage(null);
+                }
             }
         }
     }
@@ -414,14 +417,15 @@ public class ApplicationController implements Initializable {
         Main.game.printMap();
         if (Main.game.player2.jatekos && Main.game.vasarol != Main.game.player2) {
             Main.game.vasarol = Main.game.player2;
-            fxmlLoader = new FXMLLoader(Main.class.getResource("Arrange.fxml"));
+            fxmlLoader = new FXMLLoader(Main.class.getResource("Shop.fxml"));
         }
         else {
-            //bot vásárol és elrendez
+            //TODO: bot vásárol és elrendez
             fxmlLoader = new FXMLLoader(Main.class.getResource("Game.fxml"));
         }
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
     }
+
 }

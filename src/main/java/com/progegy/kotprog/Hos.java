@@ -5,7 +5,7 @@ public class Hos {
     private int tamadas, vedekezes, varazsero, tudas, moral, szerencse;
     private int arany, mana;
     private Egyseg[] egysegek = { new Foldmuves(this, 0), new Ijasz(this, 0), new Lovag(this, 0), new Magus(this, 0), new Griff(this,0) };
-    private Varazslat[] varazslatok = {new Villamcsapas(0), new Tuzlabda(0), new Pajzs(0), new Erosites(0), new Feltamasztas(0)};
+    private Varazslat[] varazslatok = {new Villamcsapas(false), new Tuzlabda(false), new Pajzs(false), new Erosites(false), new Feltamasztas(false)};
 
     public Hos(int arany, boolean jatekos) {
         this.arany = arany;
@@ -32,7 +32,7 @@ public class Hos {
         return varazslatok;
     }
 
-    public void setVarazslatok(int villam, int tuz, int pajzs, int ero, int felt) {
+    public void setVarazslatok(boolean villam, boolean tuz, boolean pajzs, boolean ero, boolean felt) {
         this.varazslatok = new Varazslat[] {new Villamcsapas(villam), new Tuzlabda(tuz), new Pajzs(pajzs), new Erosites(ero), new Feltamasztas(felt)};
     }
 
