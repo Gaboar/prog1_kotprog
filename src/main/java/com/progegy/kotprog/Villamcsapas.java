@@ -10,4 +10,9 @@ public class Villamcsapas extends Varazslat {
     public void Varazs(Egyseg celpont) {
 
     }
+
+    @Override
+    public String toString() {
+        return "Ár: 60;  Mana: 5\nLeírás: egy kiválasztott ellenséges egységre (varázserő * 30) sebzés okozása";
+    }
 }

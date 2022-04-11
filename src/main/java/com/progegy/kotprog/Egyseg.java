@@ -2,6 +2,8 @@ package com.progegy.kotprog;
 
 public abstract class Egyseg {
 
+    private final String name;
+    private final Hos vezer;
     private final int ar, sebzesMin, sebzesMax, eletero, sebesseg, kezdemenyezes;
     private int osszelet, db;
 
@@ -11,7 +13,9 @@ public abstract class Egyseg {
 
     }
 
-    public Egyseg(int ar, int sebzesMin, int sebzesMax, int eletero, int sebesseg, int kezdemenyezes, int db) {
+    public Egyseg(String name, Hos vezer, int ar, int sebzesMin, int sebzesMax, int eletero, int sebesseg, int kezdemenyezes, int db) {
+        this.name = name;
+        this.vezer = vezer;
         this.ar = ar;
         this.sebzesMin = sebzesMin;
         this.sebzesMax = sebzesMax;
@@ -19,6 +23,11 @@ public abstract class Egyseg {
         this.sebesseg = sebesseg;
         this.kezdemenyezes = kezdemenyezes;
         this.db = db;
+        this.osszelet = eletero * db;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getAr() {

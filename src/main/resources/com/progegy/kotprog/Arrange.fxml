@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.progegy.kotprog.ApplicationController">
+    <children>
+        <GridPane fx:id="palya" gridLinesVisible="true" layoutX="150.0" layoutY="37.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="0">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="0">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="0">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="0">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="0">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="0">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="0">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="0">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="2">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="2">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="2">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="2">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="3">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="3">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="3">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="3">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="4">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="4">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="4">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="5">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="5">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="5">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="5">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="5">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="5">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="6">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="6">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="6">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="6">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="6">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="6">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="7">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="7">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="7">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="7">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="7">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="7">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="8">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="8">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="8">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="8">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="8">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="8">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="8">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="8">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="9">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="9">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="9">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="9">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="9">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="9">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="9">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="9">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="9">
+                    <image>
+                        <Image url="@ures.png" />
+                    </image></ImageView>
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="0" />
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="1" />
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="2" />
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="3" />
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="4" />
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="5" />
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="6" />
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="7" />
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="8" />
+
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#mezoKivalasztas" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="9" />
+
+            </children>
+        </GridPane>
+        <HBox layoutX="160.0" layoutY="571.0" spacing="20.0">
+            <children>
+                <ImageView fx:id="foldmuvesImg" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#egysegKivalasztas" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@foldmuves.png" />
+                    </image></ImageView>
+                <ImageView fx:id="ijaszImg" fitHeight="100.0" fitWidth="100.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#egysegKivalasztas" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@ijasz.png" />
+                    </image></ImageView>
+                <ImageView fx:id="lovagImg" fitHeight="100.0" fitWidth="100.0" layoutX="230.0" layoutY="10.0" onMouseClicked="#egysegKivalasztas" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@lovag.png" />
+                    </image></ImageView>
+                <ImageView fx:id="magusImg" fitHeight="100.0" fitWidth="100.0" layoutX="450.0" layoutY="10.0" onMouseClicked="#egysegKivalasztas" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@magus.png" />
+                    </image></ImageView>
+                <ImageView fx:id="griffImg" fitHeight="100.0" fitWidth="100.0" layoutX="670.0" layoutY="10.0" onMouseClicked="#egysegKivalasztas" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@griff.png" />
+                    </image></ImageView>
+            </children>
+        </HBox>
+        <Button layoutX="709.0" layoutY="221.0" mnemonicParsing="false" onAction="#jatekIndito" text="Tovább" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="50.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

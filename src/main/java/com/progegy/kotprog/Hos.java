@@ -1,13 +1,15 @@
 package com.progegy.kotprog;
 
 public class Hos {
+    public final boolean jatekos;
     private int tamadas, vedekezes, varazsero, tudas, moral, szerencse;
     private int arany, mana;
-    private Egyseg[] egysegek = { new Foldmuves(0), new Ijasz(0), new Lovag(0), new Magus(0), new Griff(0) };
+    private Egyseg[] egysegek = { new Foldmuves(this, 0), new Ijasz(this, 0), new Lovag(this, 0), new Magus(this, 0), new Griff(this,0) };
     private Varazslat[] varazslatok = {new Villamcsapas(0), new Tuzlabda(0), new Pajzs(0), new Erosites(0), new Feltamasztas(0)};
 
-    public Hos(int arany) {
+    public Hos(int arany, boolean jatekos) {
         this.arany = arany;
+        this.jatekos = jatekos;
     }
 
     public int getArany() {
@@ -23,7 +25,7 @@ public class Hos {
     }
 
     public void setEgysegek(int foldm, int ijasz, int lovag, int magus, int griff) {
-        this.egysegek = new Egyseg[] { new Foldmuves(foldm), new Ijasz(ijasz), new Lovag(lovag), new Magus(magus), new Griff(griff) };
+        this.egysegek = new Egyseg[] { new Foldmuves(this, foldm), new Ijasz(this, ijasz), new Lovag(this, lovag), new Magus(this, magus), new Griff(this, griff) };
     }
 
     public Varazslat[] getVarazslatok() {
