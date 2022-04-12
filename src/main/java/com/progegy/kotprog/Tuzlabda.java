@@ -13,6 +13,6 @@ public class Tuzlabda extends Varazslat {
 
     @Override
     public String toString() {
-        return "Ár: 120;  Mana: 9\nLeírás: egy kiválasztott mező körüli 3x3-as területen lévő összes (saját, illetve ellenséges) egységre (varázserő * 20) sebzés okozása";
+        return super.toString() + "\nLeírás: egy kiválasztott mező körüli 3x3-as területen lévő összes (saját, illetve ellenséges) egységre (varázserő * 20) sebzés okozása";
     }
 }

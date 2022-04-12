@@ -11,6 +11,6 @@ public class Foldmuves extends Egyseg {
 
     @Override
     public String toString() {
-        return "Ár: 2;  Sebzés: 1-1;  Életerő: 3;  Sebesség: 4;  Kezdeményezés: 8\nKépesség: nincs";
+        return super.toString() + "\nKépesség: nincs";
     }
 }

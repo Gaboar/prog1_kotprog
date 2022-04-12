@@ -32,8 +32,20 @@ public class Hos {
         return varazslatok;
     }
 
+    public boolean[] getVarazslatokVane() {
+        boolean[] varazs = new boolean[5];
+        for (int i = 0; i < varazs.length; i++) {
+            varazs[i] = varazslatok[i].isVan();
+        }
+        return varazs;
+    }
+
     public void setVarazslatok(boolean villam, boolean tuz, boolean pajzs, boolean ero, boolean felt) {
         this.varazslatok = new Varazslat[] {new Villamcsapas(villam), new Tuzlabda(tuz), new Pajzs(pajzs), new Erosites(ero), new Feltamasztas(felt)};
+    }
+
+    public int[] getTulajdonsagok() {
+        return new int[] {tamadas, vedekezes, varazsero, tudas, moral, szerencse};
     }
 
     public void setTulajdonsagok(int tamadas, int vedekezes, int varazsero, int tudas, int moral, int szerencse) {

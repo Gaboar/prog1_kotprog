@@ -5,7 +5,9 @@ public class GameController {
     protected Hos vasarol;
 
     protected Egyseg[][] map = new Egyseg[10][12];
-    protected Egyseg letesz;
+    protected Egyseg letesz = null;
+
+    protected int korSzam = 0;
 
     public GameController(Hos player1, Hos player2) {
         this.player1 = player1;
@@ -21,7 +23,7 @@ public class GameController {
     public void printMap() {
         for (Egyseg[] sor: map) {
             for (Egyseg mezo: sor) {
-                System.out.print((mezo != null ? mezo.getName() : "ures") + "\t");
+                System.out.print((mezo != null ? mezo.getName() : "ures") + "\t\t");
             }
             System.out.println();
         }

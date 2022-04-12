@@ -13,6 +13,6 @@ public class Feltamasztas extends Varazslat {
 
     @Override
     public String toString() {
-        return "Ár: 120;  Mana: 6\nLeírás: egy kiválasztott saját egység feltámasztása\nMaximális gyógyítás mértéke: (varázserő * 50)";
+        return super.toString() + "\nLeírás: egy kiválasztott saját egység feltámasztása\nMaximális gyógyítás mértéke: (varázserő * 50)";
     }
 }

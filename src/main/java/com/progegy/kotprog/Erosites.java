@@ -13,6 +13,6 @@ public class Erosites extends Varazslat {
 
     @Override
     public String toString() {
-        return "Ár: 120;  Mana: 8\nLeírás: egy kiválasztott saját egység sebzésének növelése (varázserő * 10%) egy körig";
+        return super.toString() + "\nLeírás: egy kiválasztott saját egység sebzésének növelése (varázserő * 10%) egy körig";
     }
 }

@@ -11,6 +11,6 @@ public class Griff extends Egyseg {
 
     @Override
     public String toString() {
-        return "Ár: 15;  Sebzés: 5-10;  Életerő: 30;  Sebesség: 7;  Kezdeményezés: 15\nKépesség: az egység tetszőlegesen sok támadónak vissza tud támadni";
+        return super.toString() + "\nKépesség: az egység tetszőlegesen sok támadónak vissza tud támadni";
     }
 }

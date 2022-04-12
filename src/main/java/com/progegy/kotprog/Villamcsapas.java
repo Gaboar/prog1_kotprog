@@ -13,6 +13,6 @@ public class Villamcsapas extends Varazslat {
 
     @Override
     public String toString() {
-        return "Ár: 60;  Mana: 5\nLeírás: egy kiválasztott ellenséges egységre (varázserő * 30) sebzés okozása";
+        return super.toString() + "\nLeírás: egy kiválasztott ellenséges egységre (varázserő * 30) sebzés okozása";
     }
 }

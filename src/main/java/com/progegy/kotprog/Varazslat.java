@@ -20,4 +20,13 @@ public abstract class Varazslat {
     public int getMana() {
         return mana;
     }
+
+    public boolean isVan() {
+        return van;
+    }
+
+    @Override
+    public String toString() {
+        return "Ár: " + ar + ";  Mana: " + mana;
+    }
 }

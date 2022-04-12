@@ -5,24 +5,21 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.Slider;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.Random;
 import java.util.ResourceBundle;
 
 public class ApplicationController implements Initializable {
@@ -75,10 +72,8 @@ public class ApplicationController implements Initializable {
         System.out.println("Nehez nehezseg");
         boltBetolto(event, 700, false);
     }
-    //endregion
 
-    @FXML
-    Label arany;
+    // TUDO: multi mod: normal(1000) vilaghaboru(30000)
 
     private void boltBetolto(ActionEvent event, int arany, boolean multi) throws IOException {
         Main.game = new GameController(new Hos(arany, true), new Hos(multi ? arany : 1000 , multi));
@@ -88,6 +83,7 @@ public class ApplicationController implements Initializable {
         scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
     }
+    //endregion
 
     //region bolt
     //region liras
@@ -192,6 +188,9 @@ public class ApplicationController implements Initializable {
     //endregion
 
     @FXML
+    Label arany;
+
+    @FXML
     protected void textBoxSelect(MouseEvent event) {
         ((TextField)event.getSource()).selectAll();
     }
@@ -217,7 +216,10 @@ public class ApplicationController implements Initializable {
 
     @FXML
     protected void checkBoxInputHandler(ActionEvent event) {
-        penzvalto();
+        if (penzvalto() < 0) {
+            ((CheckBox)event.getSource()).setSelected(false);
+            penzvalto();
+        }
     }
 
     @FXML
@@ -320,6 +322,7 @@ public class ApplicationController implements Initializable {
     }
     //endregion
 
+    //region elrendezo
     @FXML
     GridPane palya;
 
@@ -415,12 +418,13 @@ public class ApplicationController implements Initializable {
             }
         }
         Main.game.printMap();
+        Main.game.letesz = null;
         if (Main.game.player2.jatekos && Main.game.vasarol != Main.game.player2) {
             Main.game.vasarol = Main.game.player2;
             fxmlLoader = new FXMLLoader(Main.class.getResource("Shop.fxml"));
         }
         else {
-            //TODO: bot vásárol és elrendez
+            if (!Main.game.player2.jatekos) botTevekenyseg();
             fxmlLoader = new FXMLLoader(Main.class.getResource("Game.fxml"));
         }
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -428,4 +432,53 @@ public class ApplicationController implements Initializable {
         stage.setScene(scene);
     }
 
+    private void botTevekenyseg() {
+        System.out.println("Bot vasarol");
+        Random r = new Random();
+        //minden tulajdonsag random 1-3
+        //vedekezes 3-4
+        //tudas 2-3
+        //maradek tamadas (ossz 11)
+        int[] t = new int[] {0, r.nextInt(2) + 3, r.nextInt(3) + 1, r.nextInt(2) + 2, r.nextInt(3) + 1, r.nextInt(3) + 1};
+        int o = 0;
+        for (int i: t) {
+            o += i;
+        }
+        Main.game.player2.setTulajdonsagok(17 - o, t[1], t[2], t[3], t[4], t[5]);
+        Main.game.player2.setArany(Main.game.player2.getArany() - 120);
+        //1 random varazslat
+        t = new int[] {0, 0, 0, 0, 0};
+        t[r.nextInt(5)]++;
+        Main.game.player2.setVarazslatok(t[0] == 1, t[1] == 1, t[2] == 1, t[3] == 1, t[4] == 1);
+        for (Varazslat v: Main.game.player2.getVarazslatok()) {
+            if (v.isVan()) Main.game.player2.setArany(Main.game.player2.getArany() - v.getAr());
+        }
+        //minden egyseg 10-20db random
+        //griff 11-15 ha paratlan akkor -= 1
+        //maradek penz foldmuves
+        t = new int[] {0, r.nextInt(11) + 10, r.nextInt(11) + 10, r.nextInt(11) + 10, r.nextInt(5) + 11};
+        if (t[4] % 2 != 0) t[4]--;
+        for (int i = 0; i < t.length; i++) {
+            Main.game.player2.setArany(Main.game.player2.getArany() - Main.game.player2.getEgysegek()[i].getAr() * t[i]);
+        }
+        t[0] = Main.game.player2.getArany() / Main.game.player2.getEgysegek()[0].getAr();
+        Main.game.player2.setArany(0);
+        Main.game.player2.setEgysegek(t[0], t[1], t[2], t[3], t[4]);
+        System.out.println("Bot pakol");
+        for (int i = 0; i < 5; i++) {
+            boolean siker = false;
+            while (!siker) {
+                int row = r.nextInt(10);
+                int col = r.nextInt(2) + 10;
+                if (Main.game.map[row][col] == null) {
+                    Main.game.map[row][col] = Main.game.player2.getEgysegek()[i];
+                    siker = true;
+                }
+            }
+        }
+        Main.game.printMap();
+    }
+    //endregion
+
+    
 }

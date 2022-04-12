@@ -57,4 +57,9 @@ public abstract class Egyseg {
     public int getOsszelet() {
         return osszelet;
     }
+
+    @Override
+    public String toString() {
+        return "Ár: " + ar + ";  Sebzés: " + sebzesMin + "-" + sebzesMax + ";  Életerő: " + eletero + ";  Sebesség: " + sebesseg + ";  Kezdeményezés: " + kezdemenyezes;
+    }
 }

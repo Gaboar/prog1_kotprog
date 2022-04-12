@@ -11,6 +11,6 @@ public class Ijasz extends Egyseg {
 
     @Override
     public String toString() {
-        return "Ár: 6;  Sebzés: 2-4;  Életerő: 7;  Sebesség: 4;  Kezdeményezés: 9\nKépesség: az egység távolsági támadást tud végrehajtani, de csak abban az esetben, ha nincs ellenséges egység a közvetlen közelében";
+        return super.toString() + "\nKépesség: az egység távolsági támadást tud végrehajtani, de csak abban az esetben, ha nincs ellenséges egység a közvetlen közelében";
     }
 }

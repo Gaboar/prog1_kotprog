@@ -13,6 +13,6 @@ public class Pajzs extends Varazslat {
 
     @Override
     public String toString() {
-        return "Ár: 60;  Mana: 6\nLeírás: egy kiválasztott saját egység pajzzsal védése egy körig\nMaximális kivédhető sebzés: (varázserő * 50)";
+        return super.toString() + "\nLeírás: egy kiválasztott saját egység pajzzsal védése egy körig\nMaximális kivédhető sebzés: (varázserő * 50)";
     }
 }
