@@ -4,6 +4,7 @@ public class Hos {
     public final boolean jatekos;
     private int tamadas, vedekezes, varazsero, tudas, moral, szerencse;
     private int arany, mana;
+    private int utolsoLepes = 0;
     private Egyseg[] egysegek = { new Foldmuves(this, 0), new Ijasz(this, 0), new Lovag(this, 0), new Magus(this, 0), new Griff(this,0) };
     private Varazslat[] varazslatok = {new Villamcsapas(false), new Tuzlabda(false), new Pajzs(false), new Erosites(false), new Feltamasztas(false)};
 
@@ -12,12 +13,28 @@ public class Hos {
         this.jatekos = jatekos;
     }
 
+    public boolean elMeg() {
+        for (Egyseg e: egysegek) {
+            if (e.elMeg()) return true;
+        }
+        return false;
+    }
+
+    public void tamad(Egyseg kit) {
+        kit.serul(tamadas * 10, true);
+        utolsoLepes++;
+    }
+
     public int getArany() {
         return arany;
     }
 
     public void setArany(int arany) {
         this.arany = arany;
+    }
+
+    public int getUtolsoLepes() {
+        return utolsoLepes;
     }
 
     public Egyseg[] getEgysegek() {
@@ -32,20 +49,20 @@ public class Hos {
         return varazslatok;
     }
 
-    public boolean[] getVarazslatokVane() {
+    /*public boolean[] getVarazslatokVane() {
         boolean[] varazs = new boolean[5];
         for (int i = 0; i < varazs.length; i++) {
             varazs[i] = varazslatok[i].isVan();
         }
         return varazs;
-    }
+    }*/
 
     public void setVarazslatok(boolean villam, boolean tuz, boolean pajzs, boolean ero, boolean felt) {
         this.varazslatok = new Varazslat[] {new Villamcsapas(villam), new Tuzlabda(tuz), new Pajzs(pajzs), new Erosites(ero), new Feltamasztas(felt)};
     }
 
     public int[] getTulajdonsagok() {
-        return new int[] {tamadas, vedekezes, varazsero, tudas, moral, szerencse};
+        return new int[] {tamadas, vedekezes, varazsero, tudas, moral, szerencse};  //0: tamadas; 1: vedekezes; 2: varazsero; 3: tudas; 4: moral; 5: szerencse
     }
 
     public void setTulajdonsagok(int tamadas, int vedekezes, int varazsero, int tudas, int moral, int szerencse) {

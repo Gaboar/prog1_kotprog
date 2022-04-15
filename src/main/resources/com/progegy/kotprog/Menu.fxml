@@ -26,7 +26,7 @@
          <Font size="14.0" />
       </font>
    </Button>
-   <Button alignment="CENTER" layoutX="292.0" layoutY="182.0" mnemonicParsing="false" prefWidth="230.0" text="Többjátékos mód">
+   <Button alignment="CENTER" layoutX="292.0" layoutY="182.0" mnemonicParsing="false" onAction="#multiValaszto" prefWidth="230.0" text="Többjátékos mód">
       <cursor>
          <Cursor fx:constant="HAND" />
       </cursor>
@@ -42,7 +42,7 @@
          <Font size="14.0" />
       </font>
    </Button>
-   <Button alignment="CENTER" layoutX="292.0" layoutY="264.0" mnemonicParsing="false" prefWidth="230.0" text="Kilépés">
+   <Button alignment="CENTER" layoutX="292.0" layoutY="264.0" mnemonicParsing="false" onAction="#kilepesGomb" prefWidth="230.0" text="Kilépés">
       <cursor>
          <Cursor fx:constant="HAND" />
       </cursor>
