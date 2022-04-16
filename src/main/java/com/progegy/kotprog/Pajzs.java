@@ -2,13 +2,13 @@ package com.progegy.kotprog;
 
 public class Pajzs extends Varazslat {
 
-    public Pajzs(boolean van) {
-        super(60, 6, van);
+    public Pajzs(Hos tulaj, boolean van) {
+        super(tulaj, 60, 6, van);
     }
 
     @Override
-    public void Varazs(Egyseg celpont) {
-
+    public void Varazs(Pont celpont) {
+        Main.game.getEgyseg(celpont).setPajzs(getTulaj().getTulajdonsagok()[2] * 50);
     }
 
     @Override

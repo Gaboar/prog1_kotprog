@@ -20,6 +20,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -451,7 +452,6 @@ public class ApplicationController implements Initializable {
         for (Node node: palya.getChildren()) {
             if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && GridPane.getRowIndex(node) == row &&
                     GridPane.getColumnIndex(node) == col && ((ImageView)node).getImage() != null && ((ImageView)node).getImage().getUrl().contains("ures")) {
-                //((ImageView)node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/" + Main.game.letesz.getName() + ".png"));
                 kepForgato((ImageView)node, Main.game.vasarol, new Image("file:src/main/resources/com/progegy/kotprog/" + Main.game.letesz.getNev() + ".png"));
                 nemTehet = true;
             }
@@ -476,6 +476,7 @@ public class ApplicationController implements Initializable {
                 }
             }
         }
+        // TODO: nem tette le az osszes egyseget
         Main.game.printMap();
         Main.game.letesz = null;
         if (Main.game.player2.jatekos && Main.game.vasarol != Main.game.player2) {
@@ -538,7 +539,10 @@ public class ApplicationController implements Initializable {
 
     //region disableInputs 0: hos1    1: hos2    2: e1    3: e2
     private void disableInputs(int option) {
-        if (option % 2 == 0) {
+        if (option == 4) {
+            disableAll(new Node[]{p1Varakozas, p1Villam, p1Tuz, p1Pajzs, p1Ero, p1Felt, p2Varakozas, p2Villam, p2Tuz, p2Pajzs, p2Ero, p2Felt});
+        }
+        else if (option % 2 == 0) {
             disableAll(new Node[]{p2Varakozas, p2Villam, p2Tuz, p2Pajzs, p2Ero, p2Felt});
             if (option == 0) {
                 disableAll(new Node[]{p1Varakozas});
@@ -617,11 +621,11 @@ public class ApplicationController implements Initializable {
             else {
                 Hos hos = Main.game.getEgyseg(new Pont(GridPane.getRowIndex((Node)event.getSource()), GridPane.getColumnIndex((Node)event.getSource()))).getVezer();
                 if (hos == Main.game.player1) {
-                    disableInputs(2);
+                    if (sVarazs == -1) disableInputs(2);
                     select(new Pont(GridPane.getRowIndex((Node)event.getSource()), GridPane.getColumnIndex((Node)event.getSource())), 0);
                 }
                 else if (Main.game.player2.jatekos) {
-                    disableInputs(3);
+                    if (sVarazs == -1) disableInputs(3);
                     select(new Pont(GridPane.getRowIndex((Node)event.getSource()), GridPane.getColumnIndex((Node)event.getSource())), 0);
                 }
             }
@@ -635,78 +639,96 @@ public class ApplicationController implements Initializable {
     }
 
     private Pont sEgyseg;
-    private boolean sVarazs;
+    private int sVarazs = -1;
 
     private void select(Pont p, int option) throws IOException {
-        if (option == 0) {
-            deselect(false);
-            sEgyseg = p;
-            if (p.row == p.col && (p.row == -1 || p.row == -2)) {
-                System.out.println("hos kivalasztva");
-                for (Node node : csatater.getChildren()) {
-                    if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && ((ImageView) node).getImage() == null) {
-                        Egyseg masik = Main.game.getEgyseg(new Pont(GridPane.getRowIndex(node), GridPane.getColumnIndex(node)));
-                        if (masik != null && masik.getVezer() != (p.row == -1 ? Main.game.player1 : Main.game.player2)) {
-                            ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/ellenseg.png"));
+        if (sVarazs == -1) {
+            if (option == 0) {
+                deselect(false);
+                sEgyseg = p;
+                if (p.row == p.col && (p.row == -1 || p.row == -2)) {
+                    System.out.println("hos kivalasztva");
+                    for (Node node : csatater.getChildren()) {
+                        if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && ((ImageView) node).getImage() == null) {
+                            Egyseg masik = Main.game.getEgyseg(new Pont(GridPane.getRowIndex(node), GridPane.getColumnIndex(node)));
+                            if (masik != null && masik.getVezer() != (p.row == -1 ? Main.game.player1 : Main.game.player2)) {
+                                ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/ellenseg.png"));
+                            }
                         }
                     }
                 }
-            } else {
-                System.out.println(p + " egyseg kivalasztva");
-                Egyseg e = Main.game.getEgyseg(p);
-                for (Node node : csatater.getChildren()) {
-                    if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && ((ImageView) node).getImage() == null) {
-                        Egyseg masik = Main.game.getEgyseg(new Pont(GridPane.getRowIndex(node), GridPane.getColumnIndex(node)));
-                        if (masik != null && masik.getVezer() != e.getVezer() && (e.isTavolsagi() || Math.abs(p.row - GridPane.getRowIndex(node)) + Math.abs(p.col - GridPane.getColumnIndex(node)) == 1)) {
-                            ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/ellenseg.png"));
-                        } else if (Math.abs(p.row - GridPane.getRowIndex(node)) + Math.abs(p.col - GridPane.getColumnIndex(node)) <= e.getSebesseg() &&
-                                Main.game.map[GridPane.getRowIndex(node)][GridPane.getColumnIndex(node)] == null) {
-                            ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/mezo.png"));
+                else {
+                    System.out.println(p + " egyseg kivalasztva");
+                    Egyseg e = Main.game.getEgyseg(p);
+                    for (Node node : csatater.getChildren()) {
+                        if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && ((ImageView) node).getImage() == null) {
+                            Egyseg masik = Main.game.getEgyseg(new Pont(GridPane.getRowIndex(node), GridPane.getColumnIndex(node)));
+                            if (masik != null && masik.getVezer() != e.getVezer() && (e.isTavolsagi() || Math.abs(p.row - GridPane.getRowIndex(node)) + Math.abs(p.col - GridPane.getColumnIndex(node)) == 1)) {
+                                ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/ellenseg.png"));
+                            }
+                            else if (Math.abs(p.row - GridPane.getRowIndex(node)) + Math.abs(p.col - GridPane.getColumnIndex(node)) <= e.getSebesseg() &&
+                                    Main.game.map[GridPane.getRowIndex(node)][GridPane.getColumnIndex(node)] == null) {
+                                ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/mezo.png"));
+                            }
                         }
                     }
                 }
             }
-        }
-        else if (option == 1) {
-            System.out.println(p + " mezo kivalasztva");
-            if (!sVarazs) {
-                Egyseg e = Main.game.getEgyseg(sEgyseg);
-                System.out.println(e.getNev() + " lepett");
-                for (Node node : csatater.getChildren()) {
-                    if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && ((ImageView) node).getImage() != null) {
-                        if (GridPane.getRowIndex(node) == p.row && GridPane.getColumnIndex(node) == p.col && ((ImageView) node).getImage().getUrl().contains("ures")) {
-                            kepForgato((ImageView) node, e.getVezer(), new Image("file:src/main/resources/com/progegy/kotprog/" + e.getNev() + ".png"));
-                            Main.game.map[p.row][p.col] = e;
-                            Main.game.getEgyseg(p).lepett();
-                            System.out.println(Main.game.getEgyseg(p).getUtolsoLepes());
-                        } else if (GridPane.getRowIndex(node) == sEgyseg.row && GridPane.getColumnIndex(node) == sEgyseg.col && ((ImageView) node).getImage().getUrl().contains(e.getNev())) {
-                            ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/ures.png"));
-                            Main.game.map[sEgyseg.row][sEgyseg.col] = null;
+            else if (option == 1) {
+                System.out.println(p + " mezo kivalasztva");
+                    Egyseg e = Main.game.getEgyseg(sEgyseg);
+                    System.out.println(e.getNev() + " lepett");
+                    for (Node node : csatater.getChildren()) {
+                        if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && ((ImageView) node).getImage() != null) {
+                            if (GridPane.getRowIndex(node) == p.row && GridPane.getColumnIndex(node) == p.col && ((ImageView) node).getImage().getUrl().contains("ures")) {
+                                kepForgato((ImageView) node, e.getVezer(), new Image("file:src/main/resources/com/progegy/kotprog/" + e.getNev() + ".png"));
+                                Main.game.map[p.row][p.col] = e;
+                                Main.game.getEgyseg(p).lepett();
+                            }
+                            else if (GridPane.getRowIndex(node) == sEgyseg.row && GridPane.getColumnIndex(node) == sEgyseg.col && ((ImageView) node).getImage().getUrl().contains(e.getNev())) {
+                                ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/ures.png"));
+                                Main.game.map[sEgyseg.row][sEgyseg.col] = null;
+                            }
                         }
                     }
-                }
-
+                selectNext();
             }
             else {
-                // mezot celzo varazslat
-            }
-            selectNext();
-        }
-        else {
-            System.out.println(p + " ellenseg kivalasztva");
-            if (sEgyseg.row == sEgyseg.col && (sEgyseg.row == -1 || sEgyseg.row == -2)) {
-                (sEgyseg.row == -1 ? Main.game.player1 : Main.game.player2).tamad(Main.game.getEgyseg(p));
-            }
-            else Main.game.getEgyseg(sEgyseg).tamad(Main.game.getEgyseg(p));
-            if (!Main.game.getEgyseg(p).elMeg()) {
-                for (Node node : csatater.getChildren()) {
-                    if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && GridPane.getRowIndex(node) == p.row &&
-                            GridPane.getColumnIndex(node) == p.col && ((ImageView) node).getImage() != null && ((ImageView) node).getImage().getUrl().contains(Main.game.getEgyseg(p).getNev())) {
-                        ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/ures.png"));
-                    }
+                System.out.println(p + " ellenseg kivalasztva");
+                if (sEgyseg.row == sEgyseg.col && (sEgyseg.row == -1 || sEgyseg.row == -2)) {
+                    (sEgyseg.row == -1 ? Main.game.player1 : Main.game.player2).tamad(Main.game.getEgyseg(p));
                 }
-                Main.game.map[p.row][p.col] = null;
+                else Main.game.getEgyseg(sEgyseg).tamad(Main.game.getEgyseg(p));
+                if (!Main.game.getEgyseg(p).elMeg()) {
+                    for (Node node : csatater.getChildren()) {
+                        if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && GridPane.getRowIndex(node) == p.row &&
+                                GridPane.getColumnIndex(node) == p.col && ((ImageView) node).getImage() != null && ((ImageView) node).getImage().getUrl().contains(Main.game.getEgyseg(p).getNev())) {
+                            ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/ures.png"));
+                        }
+                    }
+                    Main.game.map[p.row][p.col] = null;
+                }
+                selectNext();
             }
+        }
+        else {  // varazslatok
+            System.out.println("varazslas");
+            Hos hos = (sEgyseg.row == -1 ? Main.game.player1 : Main.game.player2);
+            if (option == 0) {
+                System.out.println(p + " egyseg kivalasztva");
+                hos.getVarazslatok()[sVarazs].Varazs(p);
+                // TODO: ne selectelje ujra a playert
+            }
+            else if (option == 1) {
+                System.out.println(p + " mezo kivalasztva");
+                hos.getVarazslatok()[sVarazs].Varazs(p);
+            }
+            else {
+                System.out.println(p + " ellenseg kivalasztva");
+                hos.getVarazslatok()[sVarazs].Varazs(p);
+            }
+            hos.lepett();
+            sVarazs = -1;
             selectNext();
         }
     }
@@ -727,8 +749,10 @@ public class ApplicationController implements Initializable {
     private void selectNext() throws IOException {
         if (!Main.game.player1.elMeg() || !Main.game.player2.elMeg()) {
             gameEnd();
+            return;
         }
         deselect(true);
+        disableInputs(4);
         Pont p = Main.game.getKovetkezo();
         for (Node node: csatater.getChildren()) {
             if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && GridPane.getRowIndex(node) == p.row &&
@@ -765,27 +789,65 @@ public class ApplicationController implements Initializable {
 
     @FXML
     protected void villamGomb(ActionEvent event) {
-
+        sVarazs = 0;
+        spellSelect(selectEllen(), false);
     }
 
     @FXML
     protected void tuzGomb(ActionEvent event) {
-
+        sVarazs = 1;
+        deselect(true);
+        for (Node node : csatater.getChildren()) {
+            if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && ((ImageView) node).getImage() == null) {
+                ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/mezo.png"));
+            }
+        }
     }
 
     @FXML
     protected void pajzsGomb(ActionEvent event) {
-
+        sVarazs = 2;
+        spellSelect(selectSajat(), true);
     }
 
     @FXML
     protected void eroGomb(ActionEvent event) {
-
+        sVarazs = 3;
+        spellSelect(selectSajat(), true);
     }
 
     @FXML
     protected void feltGomb(ActionEvent event) {
+        sVarazs = 4;
+        spellSelect(selectSajat(), true);
+    }
 
+    private List<Pont> selectSajat() {
+        List<Pont> select = new ArrayList<>();
+        for (Pont p: Main.game.getEgysegek()) {
+            if (Main.game.getEgyseg(p).getVezer() == (sEgyseg.row == -1 ? Main.game.player1 : Main.game.player2)) select.add(p);
+        }
+        return select;
+    }
+
+    private List<Pont> selectEllen() {
+        List<Pont> select = new ArrayList<>();
+        for (Pont p: Main.game.getEgysegek()) {
+            if (Main.game.getEgyseg(p).getVezer() != (sEgyseg.row == -1 ? Main.game.player1 : Main.game.player2)) select.add(p);
+        }
+        return select;
+    }
+
+    private void spellSelect(List<Pont> egysegek, boolean sajat) {
+        deselect(true);
+        for (Pont p: egysegek) {
+            for (Node node : csatater.getChildren()) {
+                if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && GridPane.getRowIndex(node) == p.row &&
+                        GridPane.getColumnIndex(node) == p.col && ((ImageView) node).getImage() == null) {
+                        ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/" + (sajat ? "sajat" : "ellenseg") + ".png"));
+                }
+            }
+        }
     }
 
     @FXML

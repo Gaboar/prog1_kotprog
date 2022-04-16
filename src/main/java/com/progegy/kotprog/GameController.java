@@ -34,6 +34,16 @@ public class GameController {
         return ret;
     }
 
+    public List<Pont> getEgysegekInArea(Pont center, int r) {
+        List<Pont> ret = new ArrayList<>();
+        for (int i = Math.max(0, center.row - r); i < Math.min(center.row + r, 11); i++) {
+            for (int j = Math.max(0, center.col - r); j < Math.min(center.col + r, 9); j++) {
+                if (map[i][j] != null) ret.add(new Pont(i, j));
+            }
+        }
+        return ret;
+    }
+
     public Pont getKovetkezo() {
         Random r = new Random();
         List<Pont> egysegek = getEgysegek();
@@ -58,6 +68,11 @@ public class GameController {
         }
         if (lehetne.size() == 0) {
             korSzam++;
+            System.out.println("=== Uj kor kovetkezik ===");
+            for (Pont p: getEgysegek()) {
+                getEgyseg(p).setPajzs(0);
+                getEgyseg(p).setErosites(false);
+            }
             return getKovetkezo();
         }
         return lehetne.get(r.nextInt(lehetne.size()));
@@ -79,9 +94,10 @@ public class GameController {
 
     public List<Egyseg> getSzomszedok(Egyseg e) {
         List<Egyseg> ret = new ArrayList<>();
+        Pont p = getPozicio(e);
         for (int i = 0; i < map.length; i++) {
             for (int j = 0; j < map[i].length; j++) {
-                if (map[i][j] != null) ret.add(map[i][j]);
+                if (map[i][j] != null && map[i][j].getVezer() == e.getVezer() && Math.abs(p.row - i) + Math.abs(p.col - j) == 1) ret.add(map[i][j]);
             }
         }
         return ret;

@@ -6,7 +6,7 @@ public class Hos {
     private int arany, mana;
     private int utolsoLepes = 0;
     private Egyseg[] egysegek = { new Foldmuves(this, 0), new Ijasz(this, 0), new Lovag(this, 0), new Magus(this, 0), new Griff(this,0) };
-    private Varazslat[] varazslatok = {new Villamcsapas(false), new Tuzlabda(false), new Pajzs(false), new Erosites(false), new Feltamasztas(false)};
+    private Varazslat[] varazslatok = {new Villamcsapas(this, false), new Tuzlabda(this, false), new Pajzs(this, false), new Erosites(this, false), new Feltamasztas(this, false)};
 
     public Hos(int arany, boolean jatekos) {
         this.arany = arany;
@@ -20,9 +20,13 @@ public class Hos {
         return false;
     }
 
+    public void lepett() {
+        this.utolsoLepes = Main.game.korSzam;
+    }
+
     public void tamad(Egyseg kit) {
-        kit.serul(tamadas * 10, true);
-        utolsoLepes++;
+        kit.serul(tamadas * 10, true, false, null);
+        lepett();
     }
 
     public int getArany() {
@@ -49,16 +53,8 @@ public class Hos {
         return varazslatok;
     }
 
-    /*public boolean[] getVarazslatokVane() {
-        boolean[] varazs = new boolean[5];
-        for (int i = 0; i < varazs.length; i++) {
-            varazs[i] = varazslatok[i].isVan();
-        }
-        return varazs;
-    }*/
-
     public void setVarazslatok(boolean villam, boolean tuz, boolean pajzs, boolean ero, boolean felt) {
-        this.varazslatok = new Varazslat[] {new Villamcsapas(villam), new Tuzlabda(tuz), new Pajzs(pajzs), new Erosites(ero), new Feltamasztas(felt)};
+        this.varazslatok = new Varazslat[] {new Villamcsapas(this, villam), new Tuzlabda(this, tuz), new Pajzs(this, pajzs), new Erosites(this, ero), new Feltamasztas(this, felt)};
     }
 
     public int[] getTulajdonsagok() {

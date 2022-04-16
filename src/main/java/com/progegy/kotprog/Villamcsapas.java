@@ -2,13 +2,13 @@ package com.progegy.kotprog;
 
 public class Villamcsapas extends Varazslat {
 
-    public Villamcsapas(boolean van) {
-        super(60, 5, van);
+    public Villamcsapas(Hos tulaj, boolean van) {
+        super(tulaj, 60, 5, van);
     }
 
     @Override
-    public void Varazs(Egyseg celpont) {
-
+    public void Varazs(Pont celpont) {
+        Main.game.getEgyseg(celpont).serul(getTulaj().getTulajdonsagok()[2] * 30, true, false, null);
     }
 
     @Override

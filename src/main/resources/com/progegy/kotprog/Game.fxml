@@ -669,23 +669,23 @@
       </Button>
         <VBox fx:id="p1Varazs" layoutX="53.0" layoutY="493.0" spacing="20.0">
             <children>
-                <Button fx:id="p1Villam" disable="true" mnemonicParsing="false" opacity="0.0" prefWidth="95.0" text="Villámcsapás">
+                <Button fx:id="p1Villam" disable="true" mnemonicParsing="false" onAction="#villamGomb" opacity="0.0" prefWidth="95.0" text="Villámcsapás">
                <font>
                   <Font size="13.0" />
                </font></Button>
-                <Button fx:id="p1Tuz" disable="true" mnemonicParsing="false" opacity="0.0" prefWidth="95.0" text="Tűzlabda">
+                <Button fx:id="p1Tuz" disable="true" mnemonicParsing="false" onAction="#tuzGomb" opacity="0.0" prefWidth="95.0" text="Tűzlabda">
                <font>
                   <Font size="13.0" />
                </font></Button>
-                <Button fx:id="p1Pajzs" disable="true" mnemonicParsing="false" opacity="0.0" prefWidth="95.0" text="Pajzs">
+                <Button fx:id="p1Pajzs" disable="true" mnemonicParsing="false" onAction="#pajzsGomb" opacity="0.0" prefWidth="95.0" text="Pajzs">
                <font>
                   <Font size="13.0" />
                </font></Button>
-                <Button fx:id="p1Ero" disable="true" mnemonicParsing="false" opacity="0.0" prefWidth="95.0" text="Erősítés">
+                <Button fx:id="p1Ero" disable="true" mnemonicParsing="false" onAction="#eroGomb" opacity="0.0" prefWidth="95.0" text="Erősítés">
                <font>
                   <Font size="13.0" />
                </font></Button>
-                <Button fx:id="p1Felt" disable="true" mnemonicParsing="false" opacity="0.0" prefWidth="95.0" text="Feltámasztás">
+                <Button fx:id="p1Felt" disable="true" mnemonicParsing="false" onAction="#feltGomb" opacity="0.0" prefWidth="95.0" text="Feltámasztás">
                <font>
                   <Font size="13.0" />
                </font></Button>
@@ -708,27 +708,27 @@
       </Button>
       <VBox fx:id="p2Varazs" layoutX="853.0" layoutY="493.0" spacing="20.0">
          <children>
-            <Button fx:id="p2Villam" disable="true" mnemonicParsing="false" opacity="0.0" prefWidth="95.0" text="Villámcsapás">
+            <Button fx:id="p2Villam" disable="true" mnemonicParsing="false" onAction="#villamGomb" opacity="0.0" prefWidth="95.0" text="Villámcsapás">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button fx:id="p2Tuz" disable="true" mnemonicParsing="false" opacity="0.0" prefWidth="95.0" text="Tűzlabda">
+            <Button fx:id="p2Tuz" disable="true" mnemonicParsing="false" onAction="#tuzGomb" opacity="0.0" prefWidth="95.0" text="Tűzlabda">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button fx:id="p2Pajzs" disable="true" mnemonicParsing="false" opacity="0.0" prefWidth="95.0" text="Pajzs">
+            <Button fx:id="p2Pajzs" disable="true" mnemonicParsing="false" onAction="#pajzsGomb" opacity="0.0" prefWidth="95.0" text="Pajzs">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button fx:id="p2Ero" disable="true" mnemonicParsing="false" opacity="0.0" prefWidth="95.0" text="Erősítés">
+            <Button fx:id="p2Ero" disable="true" mnemonicParsing="false" onAction="#eroGomb" opacity="0.0" prefWidth="95.0" text="Erősítés">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button fx:id="p2Felt" disable="true" mnemonicParsing="false" opacity="0.0" prefWidth="95.0" text="Feltámasztás">
+            <Button fx:id="p2Felt" disable="true" mnemonicParsing="false" onAction="#feltGomb" opacity="0.0" prefWidth="95.0" text="Feltámasztás">
                <font>
                   <Font size="13.0" />
                </font>

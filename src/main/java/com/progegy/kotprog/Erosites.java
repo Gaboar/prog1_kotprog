@@ -2,13 +2,13 @@ package com.progegy.kotprog;
 
 public class Erosites extends Varazslat {
 
-    public Erosites(boolean van) {
-        super(120, 8, van);
+    public Erosites(Hos tulaj, boolean van) {
+        super(tulaj, 120, 8, van);
     }
 
     @Override
-    public void Varazs(Egyseg celpont) {
-
+    public void Varazs(Pont celpont) {
+        Main.game.getEgyseg(celpont).setErosites(true);
     }
 
     @Override

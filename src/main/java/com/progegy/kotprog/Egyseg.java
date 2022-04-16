@@ -8,14 +8,16 @@ public abstract class Egyseg {
     private final Hos vezer;
     private final int ar, sebzesMin, sebzesMax, eletero, sebesseg, kezdemenyezes;
     private final boolean tavolsagi;
-    private int osszelet, db;
+    private int osszelet, eredetiDb;
     private int utolsoLepes = 0;    // utolso kor ahol csinalt barmit
+    private int pajzs = 0;
+    private boolean erosites = false;
 
     public abstract void tamad(Egyseg kit);
 
-    public abstract void serul(double mennyit, boolean tipus);  //type: true=truedamage
+    public abstract void serul(double mennyit, boolean tipus, boolean visszaT, Egyseg tamado);  //type: true=truedamage
 
-    public Egyseg(String nev, Hos vezer, int ar, int sebzesMin, int sebzesMax, int eletero, int sebesseg, int kezdemenyezes, boolean tavolsagi, int db) {
+    public Egyseg(String nev, Hos vezer, int ar, int sebzesMin, int sebzesMax, int eletero, int sebesseg, int kezdemenyezes, boolean tavolsagi, int eredetiDb) {
         this.nev = nev;
         this.vezer = vezer;
         this.ar = ar;
@@ -25,8 +27,8 @@ public abstract class Egyseg {
         this.sebesseg = sebesseg;
         this.kezdemenyezes = kezdemenyezes;
         this.tavolsagi = tavolsagi;
-        this.db = db;
-        this.osszelet = eletero * db;
+        this.eredetiDb = eredetiDb;
+        this.osszelet = eletero * eredetiDb;
     }
 
     public String getNev() {
@@ -42,9 +44,9 @@ public abstract class Egyseg {
     }
 
     public int getSebzes() {
-        if (getDb() == 0) return 0;
         Random r = new Random();
-        return r.nextInt(getDb() * (sebzesMax - sebzesMin) + 1) + getDb() * sebzesMin;
+        return r.nextInt((int)Math.round((erosites ? vezer.getTulajdonsagok()[2] * 1.1 : 1) * getDb() * (sebzesMax - sebzesMin)) + 1) +
+                (int)Math.round((erosites ? vezer.getTulajdonsagok()[2] * 1.1 : 1) * getDb() * sebzesMin);
     }
 
     public int getUtolsoLepes() {
@@ -52,7 +54,7 @@ public abstract class Egyseg {
     }
 
     public void lepett() {
-        this.utolsoLepes++;
+        this.utolsoLepes = Main.game.korSzam;
     }
 
     public int getKezdemenyezes() {
@@ -72,7 +74,7 @@ public abstract class Egyseg {
     }
 
     public void setOsszelet(int osszelet) {
-        this.osszelet = Math.max(osszelet, 0);
+        this.osszelet = Math.min(Math.max(0, osszelet), eletero * eredetiDb);
     }
 
     public int getDb() {
@@ -81,6 +83,18 @@ public abstract class Egyseg {
 
     public boolean elMeg() {
         return osszelet > 0;
+    }
+
+    public int getPajzs() {
+        return pajzs;
+    }
+
+    public void setPajzs(int pajzs) {
+        this.pajzs = Math.max(pajzs, 0);
+    }
+
+    public void setErosites(boolean erosites) {
+        this.erosites = erosites;
     }
 
     @Override

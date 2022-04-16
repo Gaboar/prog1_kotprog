@@ -2,13 +2,15 @@ package com.progegy.kotprog;
 
 public class Tuzlabda extends Varazslat {
 
-    public Tuzlabda(boolean van) {
-        super(120, 9, van);
+    public Tuzlabda(Hos tulaj, boolean van) {
+        super(tulaj, 120, 9, van);
     }
 
     @Override
-    public void Varazs(Egyseg celpont) {
-
+    public void Varazs(Pont celpont) {
+        for (Pont p: Main.game.getEgysegekInArea(celpont, 1)) {
+            Main.game.getEgyseg(p).serul(getTulaj().getTulajdonsagok()[2] * 20, true, false, null);
+        }
     }
 
     @Override
