@@ -1,5 +1,8 @@
 package com.progegy.kotprog;
 
+import com.progegy.kotprog.egyseg.*;
+import com.progegy.kotprog.varazslat.*;
+
 public class Hos {
     public final boolean jatekos;
     private int tamadas, vedekezes, varazsero, tudas, moral, szerencse;

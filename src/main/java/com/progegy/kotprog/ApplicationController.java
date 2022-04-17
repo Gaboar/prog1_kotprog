@@ -648,7 +648,7 @@ public class ApplicationController implements Initializable {
                             }
                             else {
                                 for (Pont l: lephet) {
-                                    if (GridPane.getRowIndex(node) == l.row && GridPane.getColumnIndex(node) == l.col) {
+                                    if (l.equals(new Pont(GridPane.getRowIndex(node), GridPane.getColumnIndex(node)))) {
                                         ((ImageView)node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/mezo.png"));
                                     }
                                 }
@@ -663,7 +663,7 @@ public class ApplicationController implements Initializable {
                     System.out.println(e.getNev() + " lepett");
                     for (Node node : csatater.getChildren()) {
                         if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && ((ImageView) node).getImage() != null) {
-                            if (GridPane.getRowIndex(node) == p.row && GridPane.getColumnIndex(node) == p.col && ((ImageView) node).getImage().getUrl().contains("ures")) {
+                            if (p.equals(new Pont(GridPane.getRowIndex(node), GridPane.getColumnIndex(node))) && ((ImageView) node).getImage().getUrl().contains("ures")) {
                                 kepForgato((ImageView) node, e.getVezer(), new Image("file:src/main/resources/com/progegy/kotprog/" + e.getNev() + ".png"));
                                 Main.game.map[p.row][p.col] = e;
                                 Main.game.getEgyseg(p).lepett();
@@ -704,8 +704,8 @@ public class ApplicationController implements Initializable {
     private void halott(Pont p) {
         if (!Main.game.getEgyseg(p).elMeg()) {
             for (Node node : csatater.getChildren()) {
-                if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && GridPane.getRowIndex(node) == p.row &&
-                        GridPane.getColumnIndex(node) == p.col && ((ImageView) node).getImage() != null && ((ImageView) node).getImage().getUrl().contains(Main.game.getEgyseg(p).getNev())) {
+                if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && p.equals(new Pont(GridPane.getRowIndex(node), GridPane.getColumnIndex(node))) &&
+                        ((ImageView) node).getImage() != null && ((ImageView) node).getImage().getUrl().contains(Main.game.getEgyseg(p).getNev())) {
                     ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/ures.png"));
                 }
             }
@@ -735,8 +735,7 @@ public class ApplicationController implements Initializable {
         disableInputs(4);
         Pont p = Main.game.getKovetkezo();
         for (Node node: csatater.getChildren()) {
-            if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && GridPane.getRowIndex(node) == p.row &&
-                    GridPane.getColumnIndex(node) == p.col && ((ImageView)node).getImage() == null) {
+            if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && p.equals(new Pont(GridPane.getRowIndex(node), GridPane.getColumnIndex(node))) && ((ImageView)node).getImage() == null) {
                 if(Main.game.getEgyseg(p).getVezer() == Main.game.player1 || (Main.game.getEgyseg(p).getVezer() == Main.game.player2 && Main.game.player2.jatekos)){
                     ((ImageView)node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/sajat.png"));
                 }
@@ -767,8 +766,8 @@ public class ApplicationController implements Initializable {
         }
         for (Node node: csatater.getChildren()) {
             for (Pont e: Main.game.getEgysegek()) {
-                if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && GridPane.getRowIndex(node) == e.row &&
-                        GridPane.getColumnIndex(node) == e.col && ((ImageView) node).getImage() != null && ((ImageView) node).getImage().getUrl().contains("ures")) {
+                if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && e.equals(new Pont(GridPane.getRowIndex(node), GridPane.getColumnIndex(node))) &&
+                        ((ImageView) node).getImage() != null && ((ImageView) node).getImage().getUrl().contains("ures")) {
                     kepForgato((ImageView) node, Main.game.getEgyseg(e).getVezer(), new Image("file:src/main/resources/com/progegy/kotprog/" + Main.game.getEgyseg(e).getNev() + ".png"));
                 }
             }
@@ -837,9 +836,8 @@ public class ApplicationController implements Initializable {
         deselect(true);
         for (Pont p: egysegek) {
             for (Node node : csatater.getChildren()) {
-                if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && GridPane.getRowIndex(node) == p.row &&
-                        GridPane.getColumnIndex(node) == p.col && ((ImageView) node).getImage() == null) {
-                        ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/" + (sajat ? "sajat" : "ellenseg") + ".png"));
+                if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && p.equals(new Pont(GridPane.getRowIndex(node), GridPane.getColumnIndex(node))) && ((ImageView) node).getImage() == null) {
+                    ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/" + (sajat ? "sajat" : "ellenseg") + ".png"));
                 }
             }
         }

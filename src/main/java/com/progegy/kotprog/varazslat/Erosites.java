@@ -1,4 +1,9 @@
-package com.progegy.kotprog;
+package com.progegy.kotprog.varazslat;
+
+import com.progegy.kotprog.Hos;
+import com.progegy.kotprog.Main;
+import com.progegy.kotprog.Pont;
+import com.progegy.kotprog.Varazslat;
 
 import java.util.ArrayList;
 import java.util.List;

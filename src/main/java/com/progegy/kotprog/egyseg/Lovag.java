@@ -1,13 +1,13 @@
-package com.progegy.kotprog;
+package com.progegy.kotprog.egyseg;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import com.progegy.kotprog.Egyseg;
+import com.progegy.kotprog.Hos;
+import com.progegy.kotprog.Main;
 
-public class Magus extends Egyseg {
+public class Lovag extends Egyseg {
 
-    public Magus(Hos vezer, int db) {
-        super("magus", vezer, 10, 7, 11, 12, 4, 10, true, db);
+    public Lovag(Hos vezer, int db) {
+        super("lovag", vezer, 10, 9, 14, 22, 3, 14, false, db);
     }
 
     @Override
@@ -15,13 +15,6 @@ public class Magus extends Egyseg {
         double sebzes = getSebzes() * (1 + 0.1 * getVezer().getTulajdonsagok()[0]);
         System.out.println(getNev() + " sebzett: " + sebzes);
         kit.serul(sebzes, false, true, this);
-        Random r = new Random();
-        System.out.println("masodik varazslat");
-        List<Egyseg> ellen = new ArrayList<>();
-        for (Egyseg e: Main.game.getSzomszedok(kit)) {
-            if (e.getVezer() == kit.getVezer()) ellen.add(e);
-        }
-        if (ellen.size() != 0) ellen.get(r.nextInt(ellen.size())).serul(sebzes, false, true, this);
         lepett();
     }
 
@@ -34,10 +27,15 @@ public class Magus extends Egyseg {
         setPajzs(getPajzs() - serules);
         System.out.println(getNev() + " serult: " + Math.max(0, serules - getPajzs()));
         System.out.println("maradek eletero: " + getOsszelet() + "; pajzs: " + getPajzs());
+        if (elMeg() && visszaT && Math.abs(Main.game.getPozicio(tamado).row - Main.game.getPozicio(this).row) + Math.abs(Main.game.getPozicio(tamado).col - Main.game.getPozicio(this).col) <= 1) {
+            double sebzes = getSebzes() * (1 + 0.1 * getVezer().getTulajdonsagok()[0]);
+            System.out.println(getNev() + " sebzett: " + sebzes);
+            tamado.serul(sebzes, false, false, this);
+        }
     }
 
     @Override
     public String toString() {
-        return super.toString() + "\nKépesség: az egység távolsági támadást hajt végre, amely megsebez egy másik, közvetlen a célpont mellett áttó ellenséget is";
+        return super.toString() + "\nKépesség: az egység tetszőlegesen sok támadónak vissza tud támadni";
     }
 }

@@ -1,4 +1,8 @@
-package com.progegy.kotprog;
+package com.progegy.kotprog.egyseg;
+
+import com.progegy.kotprog.Egyseg;
+import com.progegy.kotprog.Hos;
+import com.progegy.kotprog.Main;
 
 public class Griff extends Egyseg {
 

@@ -1,4 +1,7 @@
-package com.progegy.kotprog;
+package com.progegy.kotprog.egyseg;
+
+import com.progegy.kotprog.Egyseg;
+import com.progegy.kotprog.Hos;
 
 public class Foldmuves extends Egyseg {
 

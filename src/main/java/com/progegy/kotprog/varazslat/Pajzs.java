@@ -1,5 +1,9 @@
-package com.progegy.kotprog;
+package com.progegy.kotprog.varazslat;
 
+import com.progegy.kotprog.Hos;
+import com.progegy.kotprog.Main;
+import com.progegy.kotprog.Pont;
+import com.progegy.kotprog.Varazslat;
 import javafx.scene.effect.ImageInput;
 
 import java.util.ArrayList;

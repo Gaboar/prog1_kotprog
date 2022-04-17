@@ -1,6 +1,5 @@
 package com.progegy.kotprog;
 
-import java.security.PublicKey;
 import java.util.*;
 
 public class GameController {
@@ -186,7 +185,6 @@ public class GameController {
                 for (Egyseg egys: getSzomszedok(getEgyseg(kovi))) {
                     if (egys.getVezer() != player2 && (ellen == null || egys.getOsszelet() < ellen.getOsszelet())) ellen = egys;
                 }
-                System.out.println(ellen);
                 if (ellen != null) System.out.println(ellen.getNev());
                 if (ellen != null) getEgyseg(kovi).tamad(ellen);
                 else {

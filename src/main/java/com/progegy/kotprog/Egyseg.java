@@ -47,7 +47,9 @@ public abstract class Egyseg {
         Random r = new Random();
         int minDmg = (int)Math.round((1 + (erosites ? vezer.getTulajdonsagok()[2] * 0.1 : 0)) * getDb() * sebzesMin);
         int maxDmg = (int)Math.round((1 + (erosites ? vezer.getTulajdonsagok()[2] * 0.1 : 0)) * getDb() * sebzesMax);
-        return r.nextInt(maxDmg - minDmg + 1) + minDmg * (r.nextInt(20) < vezer.getTulajdonsagok()[5] ? 2 : 1);
+        boolean krit = r.nextInt(20) < vezer.getTulajdonsagok()[5];
+        if (krit) System.out.println("kritikus sebzes");
+        return r.nextInt(maxDmg - minDmg + 1) + minDmg * (krit ? 2 : 1);
     }
 
     public int getUtolsoLepes() {

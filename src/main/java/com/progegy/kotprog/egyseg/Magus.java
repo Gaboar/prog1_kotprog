@@ -1,9 +1,17 @@
-package com.progegy.kotprog;
+package com.progegy.kotprog.egyseg;
 
-public class Ijasz extends Egyseg {
+import com.progegy.kotprog.Egyseg;
+import com.progegy.kotprog.Hos;
+import com.progegy.kotprog.Main;
 
-    public Ijasz(Hos vezer, int db) {
-        super("ijasz", vezer, 6, 2, 4, 7, 4, 9, true, db);
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class Magus extends Egyseg {
+
+    public Magus(Hos vezer, int db) {
+        super("magus", vezer, 10, 7, 11, 12, 4, 10, true, db);
     }
 
     @Override
@@ -11,6 +19,13 @@ public class Ijasz extends Egyseg {
         double sebzes = getSebzes() * (1 + 0.1 * getVezer().getTulajdonsagok()[0]);
         System.out.println(getNev() + " sebzett: " + sebzes);
         kit.serul(sebzes, false, true, this);
+        Random r = new Random();
+        System.out.println("masodik varazslat");
+        List<Egyseg> ellen = new ArrayList<>();
+        for (Egyseg e: Main.game.getSzomszedok(kit)) {
+            if (e.getVezer() == kit.getVezer()) ellen.add(e);
+        }
+        if (ellen.size() != 0) ellen.get(r.nextInt(ellen.size())).serul(sebzes, false, true, this);
         lepett();
     }
 
@@ -26,15 +41,7 @@ public class Ijasz extends Egyseg {
     }
 
     @Override
-    public boolean isTavolsagi() {
-        for (Egyseg e: Main.game.getSzomszedok(this)) {
-            if (getVezer() != e.getVezer()) return false;
-        }
-        return true;
-    }
-
-    @Override
     public String toString() {
-        return super.toString() + "\nKépesség: az egység távolsági támadást tud végrehajtani, de csak abban az esetben, ha nincs ellenséges egység a közvetlen közelében";
+        return super.toString() + "\nKépesség: az egység távolsági támadást hajt végre, amely megsebez egy másik, közvetlen a célpont mellett áttó ellenséget is";
     }
 }
