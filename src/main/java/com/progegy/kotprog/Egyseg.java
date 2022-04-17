@@ -13,7 +13,7 @@ public abstract class Egyseg {
     private int pajzs = 0;
     private boolean erosites = false;
 
-    public abstract void tamad(Egyseg kit); //TODO: kritikus tamadas
+    public abstract void tamad(Egyseg kit);
 
     public abstract void serul(double mennyit, boolean tipus, boolean visszaT, Egyseg tamado);  //type: true=truedamage
 
@@ -45,8 +45,9 @@ public abstract class Egyseg {
 
     public int getSebzes() {
         Random r = new Random();
-        return r.nextInt((int)Math.round((erosites ? vezer.getTulajdonsagok()[2] * 1.1 : 1) * getDb() * (sebzesMax - sebzesMin)) + 1) +
-                (int)Math.round((erosites ? vezer.getTulajdonsagok()[2] * 1.1 : 1) * getDb() * sebzesMin);
+        int minDmg = (int)Math.round((1 + (erosites ? vezer.getTulajdonsagok()[2] * 0.1 : 0)) * getDb() * sebzesMin);
+        int maxDmg = (int)Math.round((1 + (erosites ? vezer.getTulajdonsagok()[2] * 0.1 : 0)) * getDb() * sebzesMax);
+        return r.nextInt(maxDmg - minDmg + 1) + minDmg * (r.nextInt(20) < vezer.getTulajdonsagok()[5] ? 2 : 1);
     }
 
     public int getUtolsoLepes() {
