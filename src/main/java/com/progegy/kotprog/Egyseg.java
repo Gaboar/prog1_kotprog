@@ -2,6 +2,12 @@ package com.progegy.kotprog;
 
 import java.util.Random;
 
+/**
+ * Egyseg class
+ * @author Nagy Gábor
+ * @version 1.0
+ */
+
 public abstract class Egyseg {
 
     private final String nev;
@@ -13,9 +19,39 @@ public abstract class Egyseg {
     private int pajzs = 0;
     private boolean erosites = false;
 
+    /**
+     * tamad
+     *
+     * @param kit egyseg akit megtamad
+     */
+
     public abstract void tamad(Egyseg kit);
 
+    /**
+     * serul
+     *
+     * @param mennyit serules merteke
+     * @param tipus csokkenti-e a serulest a vedekezes
+     * @param visszaT vissza tud-e tamadni
+     * @param tamado az egyseg aki megsebezte
+     */
+
     public abstract void serul(double mennyit, boolean tipus, boolean visszaT, Egyseg tamado);  //type: true=truedamage
+
+    /**
+     * Egyseg
+     *
+     * @param nev egyseg neve
+     * @param vezer melyik hoshoz tartozik
+     * @param ar mennyibe kerul
+     * @param sebzesMin minimum sebzes
+     * @param sebzesMax maximum sebzes
+     * @param eletero egyseg eletereje
+     * @param sebesseg egyseg sebessege
+     * @param kezdemenyezes egyseg kezdemenyezese
+     * @param tavolsagi tud-e tavolra tamadni
+     * @param eredetiDb mennyit vasarolt a jatekos
+     */
 
     public Egyseg(String nev, Hos vezer, int ar, int sebzesMin, int sebzesMax, int eletero, int sebesseg, int kezdemenyezes, boolean tavolsagi, int eredetiDb) {
         this.nev = nev;
@@ -31,17 +67,41 @@ public abstract class Egyseg {
         this.osszelet = eletero * eredetiDb;
     }
 
+    /**
+     * getNev
+     *
+     * @return egyseg neve
+     */
+
     public String getNev() {
         return nev;
     }
+
+    /**
+     * getVezer
+     *
+     * @return a hos akihez tartozik az egyseg
+     */
 
     public Hos getVezer() {
         return vezer;
     }
 
+    /**
+     * getAr
+     *
+     * @return egyseg ara
+     */
+
     public int getAr() {
         return ar;
     }
+
+    /**
+     * getSebzes
+     *
+     * @return az egyseg sebzese
+     */
 
     public int getSebzes() {
         Random r = new Random();
@@ -51,6 +111,12 @@ public abstract class Egyseg {
         if (krit) System.out.println("kritikus sebzes");
         return r.nextInt(maxDmg - minDmg + 1) + minDmg * (krit ? 2 : 1);
     }
+
+    /**
+     * getUtolsoLepes
+     *
+     * @return melyik korben lepett utoljara
+     */
 
     public int getUtolsoLepes() {
         return utolsoLepes;
