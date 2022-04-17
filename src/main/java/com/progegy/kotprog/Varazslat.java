@@ -1,12 +1,14 @@
 package com.progegy.kotprog;
 
+import java.util.List;
+
 public abstract class Varazslat {
 
     private final int ar, mana;
     private final boolean van;
     private final Hos tulaj;
 
-    public abstract void Varazs(Pont celpont);
+    public abstract List<Pont> varazs(Pont celpont);
 
     public Varazslat(Hos tulaj, int ar, int mana, boolean van) {
         this.tulaj = tulaj;
@@ -34,5 +36,9 @@ public abstract class Varazslat {
     @Override
     public String toString() {
         return "Ár: " + ar + ";  Mana: " + mana;
+    }
+
+    public String printStatus() {
+        return "Mana: " + mana;
     }
 }

@@ -1,5 +1,6 @@
 package com.progegy.kotprog;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -16,8 +17,11 @@ public class Magus extends Egyseg {
         kit.serul(sebzes, false, true, this);
         Random r = new Random();
         System.out.println("masodik varazslat");
-        List<Egyseg> szomszedok = Main.game.getSzomszedok(kit);
-        if (szomszedok.size() != 0) szomszedok.get(r.nextInt(szomszedok.size())).serul(sebzes, false, true, this);
+        List<Egyseg> ellen = new ArrayList<>();
+        for (Egyseg e: Main.game.getSzomszedok(kit)) {
+            if (e.getVezer() == kit.getVezer()) ellen.add(e);
+        }
+        if (ellen.size() != 0) ellen.get(r.nextInt(ellen.size())).serul(sebzes, false, true, this);
         lepett();
     }
 

@@ -525,135 +525,135 @@
                         <Image url="@ures.png" />
                     </image></ImageView>
 
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="0" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="0" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="0" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="0" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="0" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="0" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="0" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="0" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="0" />
 
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="1" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="1" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="1" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="1" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="1" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="1" />
 
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="2" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="2" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="2" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="2" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="2" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="2" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="2" />
 
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="3" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="3" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="3" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="3" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="3" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="3" />
 
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="4" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="4" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="4" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="4" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="4" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="4" />
 
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="5" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="5" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="5" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="5" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="5" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="5" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="5" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="5" />
 
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="6" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="6" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="6" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="6" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="6" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="6" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="6" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="6" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="6" />
 
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="7" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="7" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="7" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="7" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="7" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="7" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="7" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="7" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="7" />
 
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="8" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="8" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="8" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="8" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="8" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="8" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="8" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="8" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="8" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="8" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="8" />
 
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="9" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="9" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="9" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="9" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="9" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="9" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="9" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="9" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="9" />
-                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="9" />
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="60.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="11" GridPane.rowIndex="9" />
 
             </children>
         </GridPane>
@@ -661,85 +661,79 @@
          <image>
             <Image url="@hos.png" />
          </image></ImageView>
-      <ImageView fx:id="p1Hos" fitHeight="150.0" fitWidth="150.0" layoutX="26.0" layoutY="210.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p1Hos" fitHeight="150.0" fitWidth="150.0" layoutX="25.0" layoutY="210.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" />
       <Button fx:id="p1Varakozas" disable="true" layoutX="53.0" layoutY="417.0" mnemonicParsing="false" onAction="#varakozasGomb" opacity="0.0" prefWidth="95.0" text="Várakozás">
          <font>
             <Font size="13.0" />
          </font>
       </Button>
-        <VBox fx:id="p1Varazs" layoutX="53.0" layoutY="493.0" spacing="20.0">
+        <VBox fx:id="p1Varazs" layoutX="53.0" layoutY="495.0" spacing="20.0">
             <children>
-                <Button fx:id="p1Villam" disable="true" mnemonicParsing="false" onAction="#villamGomb" opacity="0.0" prefWidth="95.0" text="Villámcsapás">
+                <Button fx:id="p1Villam" disable="true" mnemonicParsing="false" onAction="#villamGomb" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" opacity="0.0" prefWidth="95.0" text="Villámcsapás">
                <font>
                   <Font size="13.0" />
                </font></Button>
-                <Button fx:id="p1Tuz" disable="true" mnemonicParsing="false" onAction="#tuzGomb" opacity="0.0" prefWidth="95.0" text="Tűzlabda">
+                <Button fx:id="p1Tuz" disable="true" mnemonicParsing="false" onAction="#tuzGomb" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" opacity="0.0" prefWidth="95.0" text="Tűzlabda">
                <font>
                   <Font size="13.0" />
                </font></Button>
-                <Button fx:id="p1Pajzs" disable="true" mnemonicParsing="false" onAction="#pajzsGomb" opacity="0.0" prefWidth="95.0" text="Pajzs">
+                <Button fx:id="p1Pajzs" disable="true" mnemonicParsing="false" onAction="#pajzsGomb" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" opacity="0.0" prefWidth="95.0" text="Pajzs">
                <font>
                   <Font size="13.0" />
                </font></Button>
-                <Button fx:id="p1Ero" disable="true" mnemonicParsing="false" onAction="#eroGomb" opacity="0.0" prefWidth="95.0" text="Erősítés">
+                <Button fx:id="p1Ero" disable="true" mnemonicParsing="false" onAction="#eroGomb" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" opacity="0.0" prefWidth="95.0" text="Erősítés">
                <font>
                   <Font size="13.0" />
                </font></Button>
-                <Button fx:id="p1Felt" disable="true" mnemonicParsing="false" onAction="#feltGomb" opacity="0.0" prefWidth="95.0" text="Feltámasztás">
+                <Button fx:id="p1Felt" disable="true" mnemonicParsing="false" onAction="#feltGomb" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" opacity="0.0" prefWidth="95.0" text="Feltámasztás">
                <font>
                   <Font size="13.0" />
                </font></Button>
             </children>
         </VBox>
-      <Label fx:id="p1Leiras" alignment="TOP_LEFT" layoutX="200.0" layoutY="558.0" prefHeight="150.0" prefWidth="200.0" text="Leírás player1nek" wrapText="true">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Label>
       <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="826.0" layoutY="210.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@hos.png" />
          </image></ImageView>
-      <ImageView fx:id="p2Hos" fitHeight="150.0" fitWidth="150.0" layoutX="826.0" layoutY="210.0" onMouseClicked="#clickSelection" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="p2Hos" fitHeight="150.0" fitWidth="150.0" layoutX="825.0" layoutY="210.0" onMouseClicked="#clickSelection" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" pickOnBounds="true" preserveRatio="true" />
       <Button fx:id="p2Varakozas" disable="true" layoutX="853.0" layoutY="417.0" mnemonicParsing="false" onAction="#varakozasGomb" opacity="0.0" prefWidth="95.0" text="Várakozás">
          <font>
             <Font size="13.0" />
          </font>
       </Button>
-      <VBox fx:id="p2Varazs" layoutX="853.0" layoutY="493.0" spacing="20.0">
+      <VBox fx:id="p2Varazs" layoutX="853.0" layoutY="495.0" spacing="20.0">
          <children>
-            <Button fx:id="p2Villam" disable="true" mnemonicParsing="false" onAction="#villamGomb" opacity="0.0" prefWidth="95.0" text="Villámcsapás">
+            <Button fx:id="p2Villam" disable="true" mnemonicParsing="false" onAction="#villamGomb" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" opacity="0.0" prefWidth="95.0" text="Villámcsapás">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button fx:id="p2Tuz" disable="true" mnemonicParsing="false" onAction="#tuzGomb" opacity="0.0" prefWidth="95.0" text="Tűzlabda">
+            <Button fx:id="p2Tuz" disable="true" mnemonicParsing="false" onAction="#tuzGomb" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" opacity="0.0" prefWidth="95.0" text="Tűzlabda">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button fx:id="p2Pajzs" disable="true" mnemonicParsing="false" onAction="#pajzsGomb" opacity="0.0" prefWidth="95.0" text="Pajzs">
+            <Button fx:id="p2Pajzs" disable="true" mnemonicParsing="false" onAction="#pajzsGomb" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" opacity="0.0" prefWidth="95.0" text="Pajzs">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button fx:id="p2Ero" disable="true" mnemonicParsing="false" onAction="#eroGomb" opacity="0.0" prefWidth="95.0" text="Erősítés">
+            <Button fx:id="p2Ero" disable="true" mnemonicParsing="false" onAction="#eroGomb" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" opacity="0.0" prefWidth="95.0" text="Erősítés">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button fx:id="p2Felt" disable="true" mnemonicParsing="false" onAction="#feltGomb" opacity="0.0" prefWidth="95.0" text="Feltámasztás">
+            <Button fx:id="p2Felt" disable="true" mnemonicParsing="false" onAction="#feltGomb" onMouseEntered="#leirasStatus" onMouseExited="#leirasElrejt" opacity="0.0" prefWidth="95.0" text="Feltámasztás">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
          </children>
       </VBox>
-      <Label fx:id="p2Leiras" alignment="TOP_LEFT" layoutX="600.0" layoutY="558.0" prefHeight="150.0" prefWidth="200.0" text="Leírás player2nek" wrapText="true">
+      <Label fx:id="leiras" alignment="TOP_LEFT" layoutX="350.0" layoutY="560.0" prefHeight="150.0" prefWidth="300.0" wrapText="true">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <Button layoutX="450.0" layoutY="633.0" mnemonicParsing="false" onAction="#epicTestIze" text="Epic test button" />
     </children>
 </AnchorPane>

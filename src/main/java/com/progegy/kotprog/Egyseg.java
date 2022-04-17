@@ -13,7 +13,7 @@ public abstract class Egyseg {
     private int pajzs = 0;
     private boolean erosites = false;
 
-    public abstract void tamad(Egyseg kit);
+    public abstract void tamad(Egyseg kit); //TODO: kritikus tamadas
 
     public abstract void serul(double mennyit, boolean tipus, boolean visszaT, Egyseg tamado);  //type: true=truedamage
 
@@ -100,5 +100,11 @@ public abstract class Egyseg {
     @Override
     public String toString() {
         return "Ár: " + ar + ";  Sebzés: " + sebzesMin + "-" + sebzesMax + ";  Életerő: " + eletero + ";  Sebesség: " + sebesseg + ";  Kezdeményezés: " + kezdemenyezes;
+    }
+
+    public String printStatus() {
+        return "Mennyiség: " + getDb() + "\nÉleterő: " + osszelet + "\nSebzés: " + (int)Math.round((erosites ? vezer.getTulajdonsagok()[2] * 1.1 : 1) * getDb() * sebzesMin) + "-" +
+                (int)Math.round((erosites ? vezer.getTulajdonsagok()[2] * 1.1 : 1) * getDb() * sebzesMax) + "\nErősítés: " + (erosites ? "van" : "nincs") + "\nPajzs: " + pajzs +
+                "\nKezdeményezés: " + getKezdemenyezes();
     }
 }

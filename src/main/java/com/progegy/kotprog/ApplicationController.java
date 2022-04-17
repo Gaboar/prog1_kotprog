@@ -1,6 +1,5 @@
 package com.progegy.kotprog;
 
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,7 +13,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
@@ -23,6 +21,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.Set;
 
 public class ApplicationController implements Initializable {
 
@@ -42,14 +41,7 @@ public class ApplicationController implements Initializable {
             if (griffImg.isDisabled()) griffImg.setOpacity(0.5);
         }
         if (csatater != null) {
-            for (Node node: csatater.getChildren()) {
-                for (Pont e: Main.game.getEgysegek()) {
-                    if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && GridPane.getRowIndex(node) == e.row &&
-                            GridPane.getColumnIndex(node) == e.col && ((ImageView) node).getImage() != null && ((ImageView) node).getImage().getUrl().contains("ures")) {
-                        kepForgato((ImageView) node, Main.game.getEgyseg(e).getVezer(), new Image("file:src/main/resources/com/progegy/kotprog/" + Main.game.getEgyseg(e).getNev() + ".png"));
-                    }
-                }
-            }
+            updateMap();
             try {
                 selectNext();
             } catch (IOException e) {
@@ -484,7 +476,7 @@ public class ApplicationController implements Initializable {
             fxmlLoader = new FXMLLoader(Main.class.getResource("Shop.fxml"));
         }
         else {
-            if (!Main.game.player2.jatekos) Main.game.botTevekenyseg();
+            if (!Main.game.player2.jatekos) Main.game.automataPenzkolto();
             Main.game.vasarol = null;
             fxmlLoader = new FXMLLoader(Main.class.getResource("Game.fxml"));
         }
@@ -501,8 +493,6 @@ public class ApplicationController implements Initializable {
     @FXML
     Button p1Varakozas;
     @FXML
-    Button p1Tamadas;
-    @FXML
     Button p1Villam;
     @FXML
     Button p1Tuz;
@@ -513,14 +503,10 @@ public class ApplicationController implements Initializable {
     @FXML
     Button p1Felt;
     @FXML
-    Label p1Leiras;
-    @FXML
     ImageView p1Hos;
 
     @FXML
     Button p2Varakozas;
-    @FXML
-    Button p2Tamadas;
     @FXML
     Button p2Villam;
     @FXML
@@ -531,8 +517,6 @@ public class ApplicationController implements Initializable {
     Button p2Ero;
     @FXML
     Button p2Felt;
-    @FXML
-    Label p2Leiras;
     @FXML
     ImageView p2Hos;
     //endregion
@@ -582,7 +566,7 @@ public class ApplicationController implements Initializable {
 
     private void enableSpells(Hos hos, Node[] nodes) {
         for (int i = 0; i < 5; i++) {
-            if (hos.getVarazslatok()[i].isVan()) {
+            if (hos.getVarazslatok()[i].isVan() && hos.getVarazslatok()[i].getMana() <= hos.getMana()) {
                 nodes[i].setDisable(false);
                 nodes[i].setOpacity(1);
             }
@@ -598,11 +582,6 @@ public class ApplicationController implements Initializable {
          if (hos == Main.game.player2) imgW.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
          else imgW.setNodeOrientation(NodeOrientation.LEFT_TO_RIGHT);
          imgW.setImage(img);
-    }
-
-    @FXML
-    protected void epicTestIze(ActionEvent event) {
-
     }
 
     @FXML
@@ -660,15 +639,19 @@ public class ApplicationController implements Initializable {
                 else {
                     System.out.println(p + " egyseg kivalasztva");
                     Egyseg e = Main.game.getEgyseg(p);
+                    Set<Pont> lephet = Main.game.hovaLephet(p, e.getSebesseg());
                     for (Node node : csatater.getChildren()) {
                         if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && ((ImageView) node).getImage() == null) {
                             Egyseg masik = Main.game.getEgyseg(new Pont(GridPane.getRowIndex(node), GridPane.getColumnIndex(node)));
                             if (masik != null && masik.getVezer() != e.getVezer() && (e.isTavolsagi() || Math.abs(p.row - GridPane.getRowIndex(node)) + Math.abs(p.col - GridPane.getColumnIndex(node)) == 1)) {
-                                ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/ellenseg.png"));
+                                ((ImageView)node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/ellenseg.png"));
                             }
-                            else if (Math.abs(p.row - GridPane.getRowIndex(node)) + Math.abs(p.col - GridPane.getColumnIndex(node)) <= e.getSebesseg() &&
-                                    Main.game.map[GridPane.getRowIndex(node)][GridPane.getColumnIndex(node)] == null) {
-                                ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/mezo.png"));
+                            else {
+                                for (Pont l: lephet) {
+                                    if (GridPane.getRowIndex(node) == l.row && GridPane.getColumnIndex(node) == l.col) {
+                                        ((ImageView)node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/mezo.png"));
+                                    }
+                                }
                             }
                         }
                     }
@@ -699,37 +682,34 @@ public class ApplicationController implements Initializable {
                     (sEgyseg.row == -1 ? Main.game.player1 : Main.game.player2).tamad(Main.game.getEgyseg(p));
                 }
                 else Main.game.getEgyseg(sEgyseg).tamad(Main.game.getEgyseg(p));
-                if (!Main.game.getEgyseg(p).elMeg()) {
-                    for (Node node : csatater.getChildren()) {
-                        if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && GridPane.getRowIndex(node) == p.row &&
-                                GridPane.getColumnIndex(node) == p.col && ((ImageView) node).getImage() != null && ((ImageView) node).getImage().getUrl().contains(Main.game.getEgyseg(p).getNev())) {
-                            ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/ures.png"));
-                        }
-                    }
-                    Main.game.map[p.row][p.col] = null;
-                }
+                halott(p);
+                if (sEgyseg.row != -1 && sEgyseg.col != -2) halott(sEgyseg);
                 selectNext();
             }
         }
         else {  // varazslatok
             System.out.println("varazslas");
             Hos hos = (sEgyseg.row == -1 ? Main.game.player1 : Main.game.player2);
-            if (option == 0) {
-                System.out.println(p + " egyseg kivalasztva");
-                hos.getVarazslatok()[sVarazs].Varazs(p);
-                // TODO: ne selectelje ujra a playert
+            List<Pont> sebzett = hos.getVarazslatok()[sVarazs].varazs(p);
+            if (sebzett.size() != 0) {
+                for (Pont egyseg: sebzett) {
+                    halott(egyseg);
+                }
             }
-            else if (option == 1) {
-                System.out.println(p + " mezo kivalasztva");
-                hos.getVarazslatok()[sVarazs].Varazs(p);
-            }
-            else {
-                System.out.println(p + " ellenseg kivalasztva");
-                hos.getVarazslatok()[sVarazs].Varazs(p);
-            }
-            hos.lepett();
             sVarazs = -1;
             selectNext();
+        }
+    }
+
+    private void halott(Pont p) {
+        if (!Main.game.getEgyseg(p).elMeg()) {
+            for (Node node : csatater.getChildren()) {
+                if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && GridPane.getRowIndex(node) == p.row &&
+                        GridPane.getColumnIndex(node) == p.col && ((ImageView) node).getImage() != null && ((ImageView) node).getImage().getUrl().contains(Main.game.getEgyseg(p).getNev())) {
+                    ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/ures.png"));
+                }
+            }
+            Main.game.map[p.row][p.col] = null;
         }
     }
 
@@ -760,9 +740,6 @@ public class ApplicationController implements Initializable {
                 if(Main.game.getEgyseg(p).getVezer() == Main.game.player1 || (Main.game.getEgyseg(p).getVezer() == Main.game.player2 && Main.game.player2.jatekos)){
                     ((ImageView)node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/sajat.png"));
                 }
-                else {
-                    // TODO: ha a player2 bot
-                }
             }
         }
         if (Main.game.getEgyseg(p).getVezer() == Main.game.player1) {
@@ -775,12 +752,30 @@ public class ApplicationController implements Initializable {
                 if (Main.game.player2.getUtolsoLepes() < Main.game.korSzam) p2Hos.setImage(new Image("file:src/main/resources/com/progegy/kotprog/sajat.png"));
             }
             else {
-                // TODO: ha a player2 bot
-
+                Main.game.botTevekenyseg();
+                updateMap();
+                selectNext();
             }
         }
     }
 
+    private void updateMap() {
+        for (Node node: csatater.getChildren()) {
+            if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && ((ImageView) node).getImage() != null && !((ImageView) node).getImage().getUrl().contains("ures")) {
+                ((ImageView) node).setImage(new Image("file:src/main/resources/com/progegy/kotprog/ures.png"));
+            }
+        }
+        for (Node node: csatater.getChildren()) {
+            for (Pont e: Main.game.getEgysegek()) {
+                if (GridPane.getRowIndex(node) != null && GridPane.getColumnIndex(node) != null && GridPane.getRowIndex(node) == e.row &&
+                        GridPane.getColumnIndex(node) == e.col && ((ImageView) node).getImage() != null && ((ImageView) node).getImage().getUrl().contains("ures")) {
+                    kepForgato((ImageView) node, Main.game.getEgyseg(e).getVezer(), new Image("file:src/main/resources/com/progegy/kotprog/" + Main.game.getEgyseg(e).getNev() + ".png"));
+                }
+            }
+        }
+    }
+
+    //region varazslatok
     @FXML
     protected void varakozasGomb(ActionEvent event) throws IOException {
         Main.game.getEgyseg(sEgyseg).lepett();
@@ -849,7 +844,67 @@ public class ApplicationController implements Initializable {
             }
         }
     }
+    //endregion
 
+    @FXML
+    protected void leirasStatus(MouseEvent event) {
+        if (event.getSource().getClass() == ImageView.class) {
+            if (event.getSource() == p1Hos) {
+                leiras.setText(Main.game.player1.printStatus());
+            }
+            else if (event.getSource() == p2Hos) {
+                leiras.setText(Main.game.player2.printStatus());
+            }
+            else {
+                Egyseg e = Main.game.getEgyseg(new Pont(GridPane.getRowIndex((Node) event.getSource()), GridPane.getColumnIndex((Node) event.getSource())));
+                if (e != null) leiras.setText(e.printStatus());
+            }
+        }
+        else {
+            String id = ((Node)event.getSource()).getId();
+            if (id.contains("Varakozas")) leiras.setText("A kiválasztott egység kimarad egy körből");
+            if (id.contains("p1")) {
+                switch (id.split("1")[1]) {
+                    case "Villam":
+                        leiras.setText(Main.game.player1.getVarazslatok()[0].printStatus());
+                        break;
+                    case "Tuz":
+                        leiras.setText(Main.game.player1.getVarazslatok()[1].printStatus());
+                        break;
+                    case "Pajzs":
+                        leiras.setText(Main.game.player1.getVarazslatok()[2].printStatus());
+                        break;
+                    case "Ero":
+                        leiras.setText(Main.game.player1.getVarazslatok()[3].printStatus());
+                        break;
+                    case "Felt":
+                        leiras.setText(Main.game.player1.getVarazslatok()[4].printStatus());
+                        break;
+                }
+            }
+            else if (id.contains("p2")) {
+                switch (id.split("2")[1]) {
+                    case "Villam":
+                        leiras.setText(Main.game.player2.getVarazslatok()[0].printStatus());
+                        break;
+                    case "Tuz":
+                        leiras.setText(Main.game.player2.getVarazslatok()[1].printStatus());
+                        break;
+                    case "Pajzs":
+                        leiras.setText(Main.game.player2.getVarazslatok()[2].printStatus());
+                        break;
+                    case "Ero":
+                        leiras.setText(Main.game.player2.getVarazslatok()[3].printStatus());
+                        break;
+                    case "Felt":
+                        leiras.setText(Main.game.player2.getVarazslatok()[4].printStatus());
+                        break;
+                }
+            }
+        }
+    }
+
+    //region vege
     @FXML
     Label gyoztes;
 
@@ -875,4 +930,5 @@ public class ApplicationController implements Initializable {
         System.out.println("kilepes a jatekbol");
         System.exit(0);
     }
+    //endregion
 }

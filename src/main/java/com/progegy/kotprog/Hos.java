@@ -37,6 +37,14 @@ public class Hos {
         this.arany = arany;
     }
 
+    public int getMana() {
+        return mana;
+    }
+
+    public void setMana(int mana) {
+        this.mana = mana;
+    }
+
     public int getUtolsoLepes() {
         return utolsoLepes;
     }
@@ -69,5 +77,9 @@ public class Hos {
         this.moral = moral;
         this.szerencse = szerencse;
         this.mana = tudas * 10;
+    }
+
+    public String printStatus() {
+        return "Támadás: " + tamadas + "\nVédekezés: " + vedekezes + "\nVarázserő: " + varazsero + "\nSzenercse: " + szerencse + "\n\nMana: " + mana;
     }
 }
